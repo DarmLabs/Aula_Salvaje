@@ -11,7 +11,13 @@ public class CameraManager : MonoBehaviour
     {
         Name = GameObject.Find("Name");
     }
-
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            TurnOnText();
+        }
+    }
     public void TurnOnText()
     {
         Name.GetComponent<Text>().enabled = true;

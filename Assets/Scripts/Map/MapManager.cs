@@ -26,11 +26,9 @@ public class MapManager : MonoBehaviour
         Name.transform.position = mousePosition;
         if(Input.GetMouseButton(0))
         {
-            if(!Using)
-            {
-                gameObject.SetActive(false);
-            }
+            OffProvincias();
         }
+        Controls();
     }
 
     void OnMouseEnter()
@@ -53,19 +51,46 @@ public class MapManager : MonoBehaviour
             Using = true;
             MainCamera.GetComponent<CameraManager>().TurnOffText();
             gameObject.GetComponent<MeshRenderer>().material = Default;
+            
         }
     }
     void Controls()
     {
-        if(Input.GetKey(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
+            MainCamera.GetComponent<Animator>().Play(gameObject.name + " 0");
+            Using = false;
+            OnProvincias();
+        }
+    }   
+    void OnProvincias()
+    {
+        if(!Using)
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            if(gameObject.GetComponent<MeshCollider>() != null)
+            {
+                gameObject.GetComponent<MeshCollider>().enabled = true;
+            }
+            if(gameObject.GetComponent<BoxCollider>() != null)
+            {
+                gameObject.GetComponent<BoxCollider>().enabled = true;
+            }
         }
     }
     void OffProvincias()
     {
-        if(currentProvincia != gameObject.name)
+        if(!Using)
         {
-            gameObject.SetActive(false);
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            if(gameObject.GetComponent<MeshCollider>() != null)
+            {
+                gameObject.GetComponent<MeshCollider>().enabled = false;
+            }
+            if(gameObject.GetComponent<BoxCollider>() != null)
+            {
+                gameObject.GetComponent<BoxCollider>().enabled = false;
+            }
         }
     }
 }
