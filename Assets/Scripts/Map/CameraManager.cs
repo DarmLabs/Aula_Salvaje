@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextOnOff : MonoBehaviour
+public class CameraManager : MonoBehaviour
 {
     public GameObject Name;
 
@@ -15,5 +15,9 @@ public class TextOnOff : MonoBehaviour
     public void TurnOnText()
     {
         Name.GetComponent<Text>().enabled = true;
+    }
+    public void TurnOffText()
+    {
+        Name.GetComponent<Text>().enabled = false;
     }
 }
