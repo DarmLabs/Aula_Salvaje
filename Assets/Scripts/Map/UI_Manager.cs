@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraManager : MonoBehaviour
+public class UI_Manager : MonoBehaviour
 {
     public GameObject Name;
+    public GameObject UI;
 
     void Start()
     {
-        Name = GameObject.Find("Name");
+        
     }
     void Update()
     {
@@ -21,6 +22,7 @@ public class CameraManager : MonoBehaviour
     public void TurnOnText()
     {
         Name.GetComponent<Text>().enabled = true;
+        UI.gameObject.SetActive(true);
     }
     public void TurnOffText()
     {

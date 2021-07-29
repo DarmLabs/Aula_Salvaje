@@ -42,6 +42,7 @@ public class MapManager : MonoBehaviour
     void OnMouseExit()
     {
         gameObject.GetComponent<MeshRenderer>().material = Default;
+        Name.GetComponent<Text>().text = "";
     }
     void OnMouseOver()
     {
@@ -49,7 +50,7 @@ public class MapManager : MonoBehaviour
         {
             MainCamera.GetComponent<Animator>().Play(gameObject.name);
             Using = true;
-            MainCamera.GetComponent<CameraManager>().TurnOffText();
+            MainCamera.GetComponent<UI_Manager>().TurnOffText();
             gameObject.GetComponent<MeshRenderer>().material = Default;
             
         }
