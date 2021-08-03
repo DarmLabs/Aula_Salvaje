@@ -14,10 +14,7 @@ public class UI_Manager : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            TurnOnText();
-        }
+        Name.transform.position = Input.mousePosition;
     }
     public void TurnOnText()
     {
