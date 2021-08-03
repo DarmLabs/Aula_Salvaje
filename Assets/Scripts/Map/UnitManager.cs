@@ -6,20 +6,20 @@ using UnityEngine.UI;
 public class UnitManager : MonoBehaviour
 {
     Material Default;
-    public Material LightMaterial;
+    Material LightMaterial;
     GameObject Name;
     GameObject MainCamera;
     void Start()
     {
-        Name = GameObject.Find("Name");
         MainCamera = GameObject.Find("Main Camera");
+        Name = GameObject.Find("Name");
         Default = gameObject.GetComponent<MeshRenderer>().material;
         LightMaterial = Resources.Load("Materials/LightMaterial", typeof(Material)) as Material;
     }
 
     void Update()
     {
-
+        
     }
 
     void OnMouseEnter()
@@ -39,5 +39,13 @@ public class UnitManager : MonoBehaviour
             Name.GetComponent<Text>().text = "";
             gameObject.tag = "Untagged";
         }
+    }
+    public void OnDeactivation()
+    {
+        gameObject.GetComponent<MeshRenderer>().material = LightMaterial;
+    }
+    public void OnReactivation()
+    {
+        gameObject.GetComponent<MeshRenderer>().material = Default;
     }
 }
