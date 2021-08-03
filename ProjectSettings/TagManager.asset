@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 1160460821
+    locked: 0
+  - name: Carta
+    uniqueID: 2239123439
+    locked: 0
+  - name: Trasera
+    uniqueID: 3763051875
+    locked: 0
