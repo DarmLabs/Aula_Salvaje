@@ -40,6 +40,7 @@ public class MapManager : MonoBehaviour
         {
             canPressButton = false;
             GetComponent<Animator>().Play(currentProvincia + " 0");
+            GetComponent<UI_Manager>().SelectionOff();
             StartCoroutine(zoomOutEnds(1));
         }
         
@@ -56,6 +57,7 @@ public class MapManager : MonoBehaviour
     IEnumerator zoomInEnds(int secs)
     {
         yield return new WaitForSeconds(secs); 
+        GetComponent<UI_Manager>().SelectionOn();
         canPressButton = true;      
     }
 }

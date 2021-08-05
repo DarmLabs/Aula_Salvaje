@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {
     public GameObject Name;
-    public GameObject UI;
+    public GameObject Animales;
+    public GameObject selectedProvincia;
 
     void Start()
     {
@@ -19,10 +20,19 @@ public class UI_Manager : MonoBehaviour
     public void TurnOnText()
     {
         Name.GetComponent<Text>().enabled = true;
-        UI.gameObject.SetActive(true);
     }
     public void TurnOffText()
     {
         Name.GetComponent<Text>().enabled = false;
+    }
+    public void SelectionOn()
+    {
+        selectedProvincia = Animales.transform.Find(GetComponent<MapManager>().currentProvincia).gameObject;
+        
+        selectedProvincia.SetActive(true);
+    }
+    public void SelectionOff()
+    {
+        selectedProvincia.SetActive(false);
     }
 }
