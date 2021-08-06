@@ -7,12 +7,12 @@ public class UnitManager : MonoBehaviour
 {
     Material Default;
     Material LightMaterial;
-    GameObject Name;
+    public GameObject Name;
     GameObject MainCamera;
     void Start()
     {
-        MainCamera = GameObject.Find("Main Camera");
         Name = GameObject.Find("Name");
+        MainCamera = GameObject.Find("Main Camera");
         Default = gameObject.GetComponent<MeshRenderer>().material;
         LightMaterial = Resources.Load("Materials/LightMaterial", typeof(Material)) as Material;
     }
@@ -24,28 +24,29 @@ public class UnitManager : MonoBehaviour
 
     void OnMouseEnter()
     {
-        if(MainCamera.GetComponent<MapManager>().Zoom == false)
+        if(MainCamera.GetComponent<MapManager>().Zoom == false && MainCamera.GetComponent<UI_Manager>().ScreenOnLeft == true)
         {
-            Name.GetComponent<Text>().text = (gameObject.name);
-            gameObject.GetComponent<MeshRenderer>().material = LightMaterial;
-            gameObject.tag = "Provincia";
+            OnAsigned();
         }
     }
     void OnMouseExit()
     {
-        if(MainCamera.GetComponent<MapManager>().Zoom == false)
+        if(MainCamera.GetComponent<MapManager>().Zoom == false && MainCamera.GetComponent<UI_Manager>().ScreenOnLeft == true)
         {
-            gameObject.GetComponent<MeshRenderer>().material = Default;
-            Name.GetComponent<Text>().text = "";
-            gameObject.tag = "Untagged";
+            OffAsigned();
         }
     }
-    public void OnDeactivation()
+    public void OnAsigned()
     {
+        Name.gameObject.SetActive(true);
+        Name.GetComponent<Text>().text = (gameObject.name);
         gameObject.GetComponent<MeshRenderer>().material = LightMaterial;
+        gameObject.tag = "Provincia";
     }
-    public void OnReactivation()
+    public void OffAsigned()
     {
+        Name.gameObject.SetActive(false);
         gameObject.GetComponent<MeshRenderer>().material = Default;
+        gameObject.tag = "Untagged";
     }
 }

@@ -27,9 +27,10 @@ public class MapManager : MonoBehaviour
                     canPressButton = false;
                     currentProvincia = hit.transform.gameObject.name;
                     selectedObject = hit.transform.gameObject;
-                    selectedObject.GetComponent<UnitManager>().OnDeactivation();
+                    selectedObject.GetComponent<UnitManager>().OnAsigned();
                     GetComponent<Animator>().Play(currentProvincia);
                     GetComponent<UI_Manager>().TurnOffText();
+                    GetComponent<UI_Manager>().InfoPanelOn();
                     Zoom = true; 
                     StartCoroutine(zoomInEnds(1));
                 }
@@ -50,8 +51,9 @@ public class MapManager : MonoBehaviour
         yield return new WaitForSeconds(secs);
         Zoom = false;
         canPressButton = true;
-        selectedObject.GetComponent<UnitManager>().OnReactivation();
+        selectedObject.GetComponent<UnitManager>().OffAsigned();
         GetComponent<UI_Manager>().TurnOnText();
+        GetComponent<UI_Manager>().InfoPanelOff();
     }
     
     IEnumerator zoomInEnds(int secs)
