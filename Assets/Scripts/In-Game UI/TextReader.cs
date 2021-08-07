@@ -27,4 +27,15 @@ public class TextReader : MonoBehaviour
         TituloPanel.GetComponent<Text>().text = animName;
         animName = null;
     }
+    public void ClearTexts()
+    {
+        TituloPanel.GetComponent<Text>().text = "";
+        InfoPanel.GetComponent<Text>().text = "";
+        StartCoroutine(addText(1));
+    }
+    IEnumerator addText(int secs)
+    {
+        yield return new WaitForSeconds(secs);
+        InfoPanel.GetComponent<Text>().text = "Has clic sobre un animal para saber más sobre él!";
+    }
 }

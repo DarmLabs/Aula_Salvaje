@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
@@ -89,5 +90,9 @@ public class UI_Manager : MonoBehaviour
         clickedButton.SetActive(false);
         Inicios.transform.Find(selectedButton).gameObject.SetActive(true);
         previousButton = selectedButton;
+    }
+    public void ChangeScene()
+    {
+        SceneManager.LoadSceneAsync(selectedButton);   
     }
 }

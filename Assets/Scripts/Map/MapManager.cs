@@ -10,6 +10,7 @@ public class MapManager : MonoBehaviour
     public bool Zoom = false;
     bool canPressButton = true;
     GameObject selectedObject;
+    public GameObject textReader;
 
     void Start()
     {
@@ -42,6 +43,7 @@ public class MapManager : MonoBehaviour
             canPressButton = false;
             GetComponent<Animator>().Play(currentProvincia + " 0");
             GetComponent<UI_Manager>().SelectionOff();
+            textReader.GetComponent<TextReader>().ClearTexts();
             StartCoroutine(zoomOutEnds(1));
         }
         
