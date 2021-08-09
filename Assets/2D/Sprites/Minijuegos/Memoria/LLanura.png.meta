@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: 28adba88679c6d749bd938a368562406
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1537526414956021983
+    second: LLanura_0
+  - first:
+      213: 2085141422169928135
+    second: LLanura_1
+  - first:
+      213: 5064042822490061605
+    second: LLanura_2
+  - first:
+      213: 7845908251673115462
+    second: LLanura_3
+  - first:
+      213: -6520459638447488877
+    second: LLanura_4
+  - first:
+      213: -2351731544899441040
+    second: LLanura_5
+  - first:
+      213: -671765916848455752
+    second: LLanura_6
+  - first:
+      213: 7250567607379677966
+    second: LLanura_7
+  - first:
+      213: 2607621525223895907
+    second: LLanura_8
+  - first:
+      213: 6756750236519948401
+    second: LLanura_9
+  - first:
+      213: 5485109306533032826
+    second: LLanura_10
+  - first:
+      213: -6205153973969052023
+    second: LLanura_11
+  - first:
+      213: -140091060095799980
+    second: LLanura_12
+  - first:
+      213: -9103461612186892052
+    second: LLanura_13
+  - first:
+      213: 6964712404128810438
+    second: LLanura_14
+  - first:
+      213: -3406211455876703195
+    second: LLanura_15
+  - first:
+      213: 1839418671747389921
+    second: LLanura_16
+  - first:
+      213: 889063022237241009
+    second: LLanura_17
+  - first:
+      213: 2054456340791603512
+    second: LLanura_18
+  - first:
+      213: -5978941111997905170
+    second: LLanura_19
+  - first:
+      213: 7361536602402822039
+    second: LLanura_20
+  - first:
+      213: 9168199262772003213
+    second: LLanura_21
+  - first:
+      213: -2807092086120898613
+    second: LLanura_22
+  - first:
+      213: -2322816479414881122
+    second: LLanura_23
+  - first:
+      213: 4149602568337646730
+    second: LLanura_24
+  - first:
+      213: 1007571052044105720
+    second: LLanura_25
+  - first:
+      213: 343102163439580669
+    second: LLanura_26
+  - first:
+      213: 7820363273289204564
+    second: LLanura_27
+  - first:
+      213: -7331386084936897639
+    second: LLanura_28
+  - first:
+      213: 521381544636307385
+    second: LLanura_29
+  - first:
+      213: 747784624064820667
+    second: LLanura_30
+  - first:
+      213: 1740002239611425733
+    second: LLanura_31
+  - first:
+      213: 1523810542804659592
+    second: LLanura_32
+  - first:
+      213: 2566940117646942673
+    second: LLanura_33
+  - first:
+      213: 2336440541014114688
+    second: LLanura_34
+  - first:
+      213: 5519711710306251470
+    second: LLanura_35
+  - first:
+      213: 9070688881274211447
+    second: LLanura_36
+  - first:
+      213: -7541131923376690473
+    second: LLanura_37
+  - first:
+      213: -398643325161453385
+    second: LLanura_38
+  - first:
+      213: -4162426661722318068
+    second: LLanura_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LLanura_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4643
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12734cb2fdb99aae0800000000000000
+      internalID: -1537526414956021983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 4643
+        width: 352
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c134ee6319efec10800000000000000
+      internalID: 2085141422169928135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_2
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 4643
+        width: 352
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bf2e9dd18174640800000000000000
+      internalID: 5064042822490061605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_3
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 4643
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b38494cf342ec60800000000000000
+      internalID: 7845908251673115462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4126
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390c016718ca285a0800000000000000
+      internalID: -6520459638447488877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_5
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 4126
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e2033be98fc5fd0800000000000000
+      internalID: -2351731544899441040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 4126
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf780235786da6f0800000000000000
+      internalID: -671765916848455752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_7
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 4126
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03d1d1e2d03f9460800000000000000
+      internalID: 7250567607379677966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3611
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363f1af16f1203420800000000000000
+      internalID: 2607621525223895907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 3611
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170eec39a8cc4cd50800000000000000
+      internalID: 6756750236519948401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_10
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 3611
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73371a5ad50f1c40800000000000000
+      internalID: 5485109306533032826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_11
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 3611
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e98f4465dd2e9a0800000000000000
+      internalID: -6205153973969052023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3097
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d28ce4ceb4e0ef0800000000000000
+      internalID: -140091060095799980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_13
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 3097
+        width: 352
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8023b55e10aa180800000000000000
+      internalID: -9103461612186892052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_14
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 3097
+        width: 352
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5cadae701a7a060800000000000000
+      internalID: 6964712404128810438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_15
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 3097
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c5a9e4ab4bab0d0800000000000000
+      internalID: -3406211455876703195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2580
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e959ba498de68910800000000000000
+      internalID: 1839418671747389921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2580
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bec267bb16965c00800000000000000
+      internalID: 889063022237241009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_18
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 2580
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831be6f2825e28c10800000000000000
+      internalID: 2054456340791603512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_19
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 2580
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6c2668cb8860da0800000000000000
+      internalID: -5978941111997905170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2065
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797914b698e692660800000000000000
+      internalID: 7361536602402822039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_21
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2065
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81068f77acfb3f70800000000000000
+      internalID: 9168199262772003213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_22
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 2065
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf14face943b09d0800000000000000
+      internalID: -2807092086120898613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_23
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 2065
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e947d0208b2b3cfd0800000000000000
+      internalID: -2322816479414881122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1550
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8460d4ec89569930800000000000000
+      internalID: 4149602568337646730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_25
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1550
+        width: 352
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f73e03988c9bfd00800000000000000
+      internalID: 1007571052044105720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_26
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1550
+        width: 352
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5fb7d8991f2c400800000000000000
+      internalID: 343102163439580669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_27
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1550
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4530ae686f2878c60800000000000000
+      internalID: 7820363273289204564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1034
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b2818f23fa14a90800000000000000
+      internalID: -7331386084936897639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_29
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1034
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7dd70a0c15c3700800000000000000
+      internalID: 521381544636307385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_30
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1034
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f1e5572aa06a00800000000000000
+      internalID: 747784624064820667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_31
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1034
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c35c6861dab52810800000000000000
+      internalID: 1740002239611425733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 519
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88deddc7d99a52510800000000000000
+      internalID: 1523810542804659592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_33
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 519
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1ab00df6a9f9320800000000000000
+      internalID: 2566940117646942673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_34
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 519
+        width: 352
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081c7f50b44bc6020800000000000000
+      internalID: 2336440541014114688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_35
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 519
+        width: 353
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec23e5b4e84f99c40800000000000000
+      internalID: 5519711710306251470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c4f6c9a7f81ed70800000000000000
+      internalID: 9070688881274211447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_37
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 4
+        width: 352
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da26c66874885790800000000000000
+      internalID: -7541131923376690473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_38
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 4
+        width: 352
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8cba3020cb77af0800000000000000
+      internalID: -398643325161453385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLanura_39
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 4
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b1d6031071c36c0800000000000000
+      internalID: -4162426661722318068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 95699d88533d7f548bc766bfa89b0e4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

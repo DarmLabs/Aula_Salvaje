@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: a749268bf3665c84192a2c062af9aa0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -872391610440092067
+    second: Meseta_0
+  - first:
+      213: -9039913696241855426
+    second: Meseta_1
+  - first:
+      213: 8887399232168256862
+    second: Meseta_2
+  - first:
+      213: 7953349785981758784
+    second: Meseta_3
+  - first:
+      213: 5170166619421007717
+    second: Meseta_4
+  - first:
+      213: -102599728362636636
+    second: Meseta_5
+  - first:
+      213: -1557276320206175000
+    second: Meseta_6
+  - first:
+      213: 2276445853144292366
+    second: Meseta_7
+  - first:
+      213: -7721054242542349154
+    second: Meseta_8
+  - first:
+      213: 7187258612091898581
+    second: Meseta_9
+  - first:
+      213: 5295656728697183645
+    second: Meseta_10
+  - first:
+      213: -7366537230137648304
+    second: Meseta_11
+  - first:
+      213: 4327984283003554920
+    second: Meseta_12
+  - first:
+      213: 5084524034139102614
+    second: Meseta_13
+  - first:
+      213: 7678567060591705360
+    second: Meseta_14
+  - first:
+      213: -4729616201034912590
+    second: Meseta_15
+  - first:
+      213: 6928404340812514822
+    second: Meseta_16
+  - first:
+      213: -1120578271725331036
+    second: Meseta_17
+  - first:
+      213: -5057347618049166923
+    second: Meseta_18
+  - first:
+      213: -5674350955003039199
+    second: Meseta_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Meseta_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2066
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56ffa2d374a4e3f0800000000000000
+      internalID: -872391610440092067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_1
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2065
+        width: 355
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34d0578366cb8280800000000000000
+      internalID: -9039913696241855426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_2
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2065
+        width: 355
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55e772a382665b70800000000000000
+      internalID: 8887399232168256862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_3
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2065
+        width: 356
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d2fdfdd79ff5e60800000000000000
+      internalID: 7953349785981758784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1550
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fdb2cc52f10c740800000000000000
+      internalID: 5170166619421007717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_5
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1549
+        width: 355
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aab4e4371e739ef0800000000000000
+      internalID: -102599728362636636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_6
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1549
+        width: 355
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4cbf40071736ae0800000000000000
+      internalID: -1557276320206175000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_7
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1549
+        width: 356
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c931b317f879f10800000000000000
+      internalID: 2276445853144292366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1035
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e949db5031e49d490800000000000000
+      internalID: -7721054242542349154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1034
+        width: 355
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daca92c0a54eb360800000000000000
+      internalID: 7187258612091898581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_10
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1034
+        width: 355
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d1766bcb3fd7940800000000000000
+      internalID: 5295656728697183645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_11
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1034
+        width: 356
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b94f43b6dc4c990800000000000000
+      internalID: -7366537230137648304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 520
+        width: 353
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c86e556c6101c30800000000000000
+      internalID: 4327984283003554920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 519
+        width: 355
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d1cca8babdf8640800000000000000
+      internalID: 5084524034139102614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_14
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 519
+        width: 355
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d759e0f00cf8a60800000000000000
+      internalID: 7678567060591705360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_15
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 519
+        width: 356
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bca16daf170d5eb0800000000000000
+      internalID: -4729616201034912590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 353
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606876a2a03a62060800000000000000
+      internalID: 6928404340812514822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2
+        width: 355
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad5acabff7e270f0800000000000000
+      internalID: -1120578271725331036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_18
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2
+        width: 355
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1f288e221b0d9b0800000000000000
+      internalID: -5057347618049166923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meseta_19
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2
+        width: 356
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1223524ded7a041b0800000000000000
+      internalID: -5674350955003039199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 39787517b8b604f40b088bf7398826eb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
