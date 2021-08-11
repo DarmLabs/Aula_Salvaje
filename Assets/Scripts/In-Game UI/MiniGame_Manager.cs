@@ -16,8 +16,8 @@ public class MiniGame_Manager : MonoBehaviour
         Panel.SetActive(false);
         Panel.transform.GetChild(0).gameObject.SetActive(false);
     }
-    public void Restart()
+    public void Exit()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
     }
 }

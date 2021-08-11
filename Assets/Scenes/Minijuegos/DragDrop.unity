@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 687690823}
   - component: {fileID: 687690822}
   m_Layer: 5
-  m_Name: Resume
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +492,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2076210958}
         m_TargetAssemblyTypeName: MiniGame_Manager, Assembly-CSharp
-        m_MethodName: PauseMenuOff
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1206,7 +1206,7 @@ GameObject:
   - component: {fileID: 2006377071754356172}
   - component: {fileID: 2006377071754356173}
   m_Layer: 5
-  m_Name: Restart
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1288,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2076210958}
         m_TargetAssemblyTypeName: MiniGame_Manager, Assembly-CSharp
-        m_MethodName: Restart
+        m_MethodName: PauseMenuOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

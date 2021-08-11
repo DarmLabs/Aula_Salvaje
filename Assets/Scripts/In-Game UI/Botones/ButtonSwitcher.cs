@@ -7,18 +7,46 @@ public class ButtonSwitcher : MonoBehaviour
 {
     public Sprite On;
     public Sprite Off;
-    bool state = true;
-    public void switcher()
+    public GameObject AudioManager;
+    Universal_AudioController AudioScript;
+    void Start()
     {
-        if(state)
+        AudioManager = GameObject.Find("AudioController");
+        AudioScript = AudioManager.GetComponent<Universal_AudioController>();
+        if(gameObject.name == "Music")
         {
-            state = false;
-            GetComponent<Image>().sprite = Off;
+            GetComponent<Button>().onClick.AddListener(AudioScript.MSwitcher);
         }
         else
         {
-            state = true;
-            GetComponent<Image>().sprite = On;
+            GetComponent<Button>().onClick.AddListener(AudioScript.SSwitcher);
+        }
+        GetComponent<Button>().onClick.AddListener(switcher);
+        switcher();
+    }
+    public void switcher()
+    {
+        if(gameObject.name == "Music")
+        {
+            if(AudioScript.stateM)
+            {
+                GetComponent<Image>().sprite = On;
+            }
+            else
+            {
+                GetComponent<Image>().sprite = Off;
+            }
+        }
+        else
+        {
+            if(AudioScript.stateS)
+            {
+                GetComponent<Image>().sprite = On;
+            }
+            else
+            {
+                GetComponent<Image>().sprite = Off;
+            }
         }
     }
 }

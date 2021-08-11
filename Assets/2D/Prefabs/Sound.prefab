@@ -120,19 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5291582814393801329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5291582814393801335}
-        m_TargetAssemblyTypeName: ButtonSwitcher, Assembly-CSharp
-        m_MethodName: switcher
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5291582814393801335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   On: {fileID: 1634036860171428006, guid: 0e3ae06f2413da24e991dd1ae2e26f2f, type: 3}
   Off: {fileID: -1510967886139538756, guid: a34d19e90a07f8c4fb12c41dc30b6cdd, type: 3}
+  AudioManager: {fileID: 0}
