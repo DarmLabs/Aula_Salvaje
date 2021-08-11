@@ -1,4 +1,4 @@
-Base path: 'D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data', plugins path 'D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/PlaybackEngines'
+Base path: 'E:/UnityHub/2020.3.8f1/Editor/Data', plugins path 'E:/UnityHub/2020.3.8f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
 Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
