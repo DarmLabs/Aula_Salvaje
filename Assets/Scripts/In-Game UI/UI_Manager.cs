@@ -7,17 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
+    public bool ScreenOnLeft = false;
     public GameObject Name;
     public GameObject Animales;
     public GameObject selectedProvincia;
-    public bool ScreenOnLeft = false;
     public GameObject LeftButton;
     public GameObject RightButton;
     public GameObject CuadernoWorldSpace;
     public GameObject CuadernoOverlay;
+    public GameObject exitMapButton;
+    public GameObject Inicios;
     string selectedButton;
     string previousButton;
-    public GameObject Inicios;
     GameObject clickedButton;
 
     void Start()
@@ -94,5 +95,13 @@ public class UI_Manager : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadSceneAsync(selectedButton);   
+    }
+    public void exitMapButtonOn()
+    {
+        exitMapButton.SetActive(true);
+    }
+    public void exitMapButtonOff()
+    {
+        exitMapButton.SetActive(false);
     }
 }
