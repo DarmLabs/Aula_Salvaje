@@ -15570,6 +15570,10 @@ PrefabInstance:
       value: OffProvincia
       objectReference: {fileID: 0}
     - target: {fileID: 3463367845555192666, guid: 913de6e23c9222f48b84649950367cac, type: 3}
+      propertyPath: m_Name
+      value: Islas Malvinas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463367845555192666, guid: 913de6e23c9222f48b84649950367cac, type: 3}
       propertyPath: m_TagString
       value: OffProvincia
       objectReference: {fileID: 0}
