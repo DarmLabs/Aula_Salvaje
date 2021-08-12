@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class UI_Manager : MonoBehaviour
 {
     public bool ScreenOnLeft = false;
+    GameObject [] provincias;
     public GameObject Name;
     public GameObject Animales;
     public GameObject selectedProvincia;
@@ -20,10 +21,13 @@ public class UI_Manager : MonoBehaviour
     string selectedButton;
     string previousButton;
     GameObject clickedButton;
+    public Texture relieveTexture;
+    public int currentTexture;
 
     void Start()
     {
         Name.gameObject.SetActive(false);
+        provincias = GameObject.FindGameObjectsWithTag("OffProvincia");
     }
     void Update()
     {
@@ -103,5 +107,15 @@ public class UI_Manager : MonoBehaviour
     public void exitMapButtonOff()
     {
         exitMapButton.SetActive(false);
+    }
+    public void switchTexture()
+    {
+        if(EventSystem.current.currentSelectedGameObject.name == "Relieve")
+        {
+            foreach (var provincia in provincias)
+            {
+                provincia.GetComponent<MeshRenderer>().material.mainTexture = relieveTexture;
+            }
+        }
     }
 }

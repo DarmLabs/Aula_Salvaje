@@ -12,40 +12,46 @@ public class ButtonSwitcher : MonoBehaviour
     void Start()
     {
         AudioManager = GameObject.Find("AudioController");
-        AudioScript = AudioManager.GetComponent<Universal_AudioController>();
-        if(gameObject.name == "Music")
+        if(AudioManager != null)
         {
-            GetComponent<Button>().onClick.AddListener(AudioScript.MSwitcher);
+            AudioScript = AudioManager.GetComponent<Universal_AudioController>();
+            if(gameObject.name == "Music")
+            {
+                GetComponent<Button>().onClick.AddListener(AudioScript.MSwitcher);
+            }
+            else
+            {
+                GetComponent<Button>().onClick.AddListener(AudioScript.SSwitcher);
+            }
+            GetComponent<Button>().onClick.AddListener(switcher);
+            switcher();
         }
-        else
-        {
-            GetComponent<Button>().onClick.AddListener(AudioScript.SSwitcher);
-        }
-        GetComponent<Button>().onClick.AddListener(switcher);
-        switcher();
     }
     public void switcher()
     {
-        if(gameObject.name == "Music")
+        if(AudioScript != null)
         {
-            if(AudioScript.stateM)
+            if(gameObject.name == "Music")
             {
-                GetComponent<Image>().sprite = On;
+                if(AudioScript.stateM)
+                {
+                    GetComponent<Image>().sprite = On;
+                }
+                else
+                {
+                    GetComponent<Image>().sprite = Off;
+                }
             }
             else
             {
-                GetComponent<Image>().sprite = Off;
-            }
-        }
-        else
-        {
-            if(AudioScript.stateS)
-            {
-                GetComponent<Image>().sprite = On;
-            }
-            else
-            {
-                GetComponent<Image>().sprite = Off;
+                if(AudioScript.stateS)
+                {
+                    GetComponent<Image>().sprite = On;
+                }
+                else
+                {
+                    GetComponent<Image>().sprite = Off;
+                }
             }
         }
     }

@@ -9,12 +9,18 @@ public class UnitManager : MonoBehaviour
     Material LightMaterial;
     public GameObject Name;
     GameObject MainCamera;
+    UI_Manager uI_Manager;
+    MapManager mapManager;
+    MeshRenderer thisMeshRenderer;
     void Start()
     {
         Name = GameObject.Find("Name");
         MainCamera = GameObject.Find("Main Camera");
         Default = gameObject.GetComponent<MeshRenderer>().material;
         LightMaterial = Resources.Load("Materials/LightMaterial", typeof(Material)) as Material;
+        mapManager = MainCamera.GetComponent<MapManager>();
+        uI_Manager = MainCamera.GetComponent<UI_Manager>();
+        thisMeshRenderer = gameObject.GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -24,14 +30,14 @@ public class UnitManager : MonoBehaviour
 
     void OnMouseEnter()
     {
-        if(MainCamera.GetComponent<MapManager>().Zoom == false && MainCamera.GetComponent<UI_Manager>().ScreenOnLeft == true)
+        if(mapManager.Zoom == false && uI_Manager.ScreenOnLeft == true)
         {
             OnAsigned();
         }
     }
     void OnMouseExit()
     {
-        if(MainCamera.GetComponent<MapManager>().Zoom == false && MainCamera.GetComponent<UI_Manager>().ScreenOnLeft == true)
+        if(mapManager.Zoom == false && uI_Manager.ScreenOnLeft == true)
         {
             OffAsigned();
         }
@@ -40,13 +46,13 @@ public class UnitManager : MonoBehaviour
     {
         Name.gameObject.SetActive(true);
         Name.GetComponent<Text>().text = (gameObject.name);
-        gameObject.GetComponent<MeshRenderer>().material = LightMaterial;
+        thisMeshRenderer.material = LightMaterial;
         gameObject.tag = "Provincia";
     }
     public void OffAsigned()
     {
         Name.gameObject.SetActive(false);
-        gameObject.GetComponent<MeshRenderer>().material = Default;
-        gameObject.tag = "Untagged";
+        thisMeshRenderer.material = Default;
+        gameObject.tag = "OffProvincia";
     }
 }
