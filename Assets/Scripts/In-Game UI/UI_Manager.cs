@@ -110,7 +110,7 @@ public class UI_Manager : MonoBehaviour
     }
     public void switchTexture()
     {
-        if(EventSystem.current.currentSelectedGameObject.name == "Relieve")
+        if(EventSystem.current.currentSelectedGameObject.name == "Relieves")
         {
             foreach (var provincia in provincias)
             {
