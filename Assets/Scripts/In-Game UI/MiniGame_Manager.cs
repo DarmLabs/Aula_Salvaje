@@ -9,7 +9,7 @@ public class MiniGame_Manager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-        StartCoroutine(disableTuto(3));
+        StartCoroutine(disableTuto(5));
     }
     public void PauseMenuOn()
     {

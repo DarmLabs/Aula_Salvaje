@@ -36,6 +36,7 @@ public class TextReader : MonoBehaviour
     IEnumerator addText(int secs)
     {
         yield return new WaitForSeconds(secs);
+        InfoPanel.GetComponent<Text>().alignment = TextAnchor.UpperCenter;
         InfoPanel.GetComponent<Text>().text = "Has clic sobre un animal para saber más sobre él!".ToUpper();
     }
 }
