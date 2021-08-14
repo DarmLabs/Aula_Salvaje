@@ -13,7 +13,7 @@ public class showText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        buttonsText.GetComponent<Text>().text = eventData.pointerEnter.gameObject.name;
+        buttonsText.GetComponent<Text>().text = eventData.pointerEnter.gameObject.name.ToUpper();
         buttonsText.transform.position = eventData.pointerEnter.gameObject.transform.position;
         buttonsText.GetComponent<Animator>().Play("Desliz");
     }

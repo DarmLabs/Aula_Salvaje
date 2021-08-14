@@ -45,7 +45,7 @@ public class UnitManager : MonoBehaviour
     public void OnAsigned()
     {
         Name.gameObject.SetActive(true);
-        Name.GetComponent<Text>().text = (gameObject.name);
+        Name.GetComponent<Text>().text = (gameObject.name.ToUpper());
         thisMeshRenderer.material = LightMaterial;
         gameObject.tag = "Provincia";
     }

@@ -13,18 +13,18 @@ public class TextReader : MonoBehaviour
     public void PrintFiles()
     {
         animName = EventSystem.current.currentSelectedGameObject.name;
-        TextAsset file = Resources.Load<TextAsset>("InfoAnimals/"+animName);
+        TextAsset file = Resources.Load<TextAsset>("InfoAnimales/"+animName);
         if(file != null)
         {
-            InfoPanel.GetComponent<Text>().text = file.text;
+            InfoPanel.GetComponent<Text>().text = file.text.ToUpper();
             InfoPanel.GetComponent<Text>().alignment = TextAnchor.UpperLeft;
         }
         else
         {
             InfoPanel.GetComponent<Text>().alignment = TextAnchor.UpperCenter;
-            InfoPanel.GetComponent<Text>().text = "Lo sentimos, no hay informacion :c";
+            InfoPanel.GetComponent<Text>().text = "Lo sentimos, no hay informacion :(".ToUpper();
         }
-        TituloPanel.GetComponent<Text>().text = animName;
+        TituloPanel.GetComponent<Text>().text = animName.ToUpper();
         animName = null;
     }
     public void ClearTexts()
@@ -36,6 +36,6 @@ public class TextReader : MonoBehaviour
     IEnumerator addText(int secs)
     {
         yield return new WaitForSeconds(secs);
-        InfoPanel.GetComponent<Text>().text = "Has clic sobre un animal para saber más sobre él!";
+        InfoPanel.GetComponent<Text>().text = "Has clic sobre un animal para saber más sobre él!".ToUpper();
     }
 }

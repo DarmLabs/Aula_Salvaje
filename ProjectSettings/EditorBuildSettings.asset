@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Laberinto.unity
     guid: b9ccc37c89cc92e4bb59f29ddb7ff5eb
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Carrera.unity
+    guid: c332c75fcc25c0f4dba4b2b8041fd43a
   m_configObjects: {}

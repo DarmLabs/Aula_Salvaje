@@ -9,4 +9,8 @@ public class MainMenu_Manager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("In-Game");
     }
+    public void PressCredits()
+    {
+        
+    }
 }

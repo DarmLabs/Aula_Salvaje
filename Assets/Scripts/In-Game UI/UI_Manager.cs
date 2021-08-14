@@ -16,16 +16,22 @@ public class UI_Manager : MonoBehaviour
     public GameObject RightButton;
     public GameObject CuadernoWorldSpace;
     public GameObject CuadernoOverlay;
+    public GameObject textureButtons;
     public GameObject exitMapButton;
     public GameObject Inicios;
+    public GameObject Bloqueador_Inicio;
     string selectedButton;
     string previousButton;
     GameObject clickedButton;
     public Texture relieveTexture;
+    public Texture biomasTexture;
+    public Texture provinciasTexture;
+    public Texture regionesTexture;
     public int currentTexture;
 
     void Start()
     {
+        Time.timeScale = 1;
         Name.gameObject.SetActive(false);
         provincias = GameObject.FindGameObjectsWithTag("OffProvincia");
     }
@@ -69,6 +75,7 @@ public class UI_Manager : MonoBehaviour
     }
     public void OnLeft()
     {
+        Bloqueador_Inicio.SetActive(false);
         ScreenOnLeft = true;
         LeftButton.GetComponent<Button>().enabled = true;
         GetComponent<MapManager>().enabled = true;
@@ -77,11 +84,13 @@ public class UI_Manager : MonoBehaviour
     {
         CuadernoOverlay.SetActive(true);
         CuadernoWorldSpace.SetActive(false);
+        textureButtons.SetActive(false);
     }
     public void InfoPanelOff()
     {
         CuadernoOverlay.SetActive(false);
         CuadernoWorldSpace.SetActive(true);
+        textureButtons.SetActive(true);
     }
     public void PressFlap()
     {
@@ -115,6 +124,27 @@ public class UI_Manager : MonoBehaviour
             foreach (var provincia in provincias)
             {
                 provincia.GetComponent<MeshRenderer>().material.mainTexture = relieveTexture;
+            }
+        }
+        if(EventSystem.current.currentSelectedGameObject.name == "Biomas")
+        {
+            foreach (var provincia in provincias)
+            {
+                provincia.GetComponent<MeshRenderer>().material.mainTexture = biomasTexture;
+            }
+        }
+        if(EventSystem.current.currentSelectedGameObject.name == "Provincias")
+        {
+            foreach (var provincia in provincias)
+            {
+                provincia.GetComponent<MeshRenderer>().material.mainTexture = provinciasTexture;
+            }
+        }
+        if(EventSystem.current.currentSelectedGameObject.name == "Regiones")
+        {
+            foreach (var provincia in provincias)
+            {
+                provincia.GetComponent<MeshRenderer>().material.mainTexture = regionesTexture;
             }
         }
     }
