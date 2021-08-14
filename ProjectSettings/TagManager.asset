@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Provincia
   - OffProvincia
+  - Carnivoro
+  - Herbivoro
+  - Omnivoro
+  - Alimentacion
+  - Jugador
+  - Basura
   layers:
   - Default
   - TransparentFX
