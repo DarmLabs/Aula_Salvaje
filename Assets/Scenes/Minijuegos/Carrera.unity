@@ -1746,7 +1746,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: RECORRE LA PISTA EN LA CARRERA DE ARMADILLOS EVITANDO LOS OBSTACULOS!
+  m_Text: "RECORRE LA PISTA AYUDANDO AL ARMADILLO A EVITAR LOS OBST\xC1CULOS!"
 --- !u!222 &1958856241
 CanvasRenderer:
   m_ObjectHideFlags: 0

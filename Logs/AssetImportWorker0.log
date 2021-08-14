@@ -1689,3 +1689,132 @@ System memory in use after: 68.9 MB.
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 3183.
 Total: 3.589300 ms (FindLiveObjects: 0.297000 ms CreateObjectMapping: 0.140900 ms MarkObjects: 3.127800 ms  DeleteObjects: 0.022300 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002188 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.236 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2353 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.5 MB.
+System memory in use after: 115.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3186.
+Total: 2.903400 ms (FindLiveObjects: 0.340100 ms CreateObjectMapping: 0.205500 ms MarkObjects: 2.317000 ms  DeleteObjects: 0.038900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 927.988398 seconds.
+  path: Assets/Scripts/In-Game UI/TextReader.cs
+  artifactKey: Guid(5e369b030df6d584bafc622571e0cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/In-Game UI/TextReader.cs using Guid(5e369b030df6d584bafc622571e0cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13829cfd3e81e927c061021973733974') in 0.014278 seconds
+  Import took 0.018485 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001583 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.241 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2353 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.6 MB.
+System memory in use after: 115.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3189.
+Total: 2.711300 ms (FindLiveObjects: 0.296200 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.263100 ms  DeleteObjects: 0.038700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.041957 seconds.
+  path: Assets/Scripts/In-Game UI/TextReader.cs
+  artifactKey: Guid(5e369b030df6d584bafc622571e0cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/In-Game UI/TextReader.cs using Guid(5e369b030df6d584bafc622571e0cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3207771566f5589bfe27499a206088') in 0.004821 seconds
+  Import took 0.008677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.443177 seconds.
+  path: Assets/Scenes/Minijuegos/VeoVeo.unity
+  artifactKey: Guid(b1baa21de96ff724c8e4fa40f255d9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Minijuegos/VeoVeo.unity using Guid(b1baa21de96ff724c8e4fa40f255d9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d103e8a933bcf5af59f624be78a2055') in 0.013354 seconds
+  Import took 0.017706 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001718 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.016 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2353 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.6 MB.
+System memory in use after: 115.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3192.
+Total: 2.928300 ms (FindLiveObjects: 0.292000 ms CreateObjectMapping: 0.107700 ms MarkObjects: 2.508800 ms  DeleteObjects: 0.018100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.126204 seconds.
+  path: Assets/Scripts/In-Game UI/MiniGame_Manager.cs
+  artifactKey: Guid(c457ffd148f0d3942a50374780c09a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/In-Game UI/MiniGame_Manager.cs using Guid(c457ffd148f0d3942a50374780c09a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bdd7dec9fdce8273a60b86ddf45e89') in 0.005827 seconds
+  Import took 0.023782 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001636 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.024 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2353 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.6 MB.
+System memory in use after: 115.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3195.
+Total: 2.383300 ms (FindLiveObjects: 0.263000 ms CreateObjectMapping: 0.116600 ms MarkObjects: 1.985500 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.870837 seconds.
+  path: Assets/Scripts/In-Game UI/MiniGame_Manager.cs
+  artifactKey: Guid(c457ffd148f0d3942a50374780c09a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/In-Game UI/MiniGame_Manager.cs using Guid(c457ffd148f0d3942a50374780c09a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3b5ecb2a88ca6ee5e024e6933e190b') in 0.005999 seconds
+  Import took 0.023516 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
