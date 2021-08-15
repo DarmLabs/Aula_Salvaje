@@ -17,6 +17,9 @@ public class UI_Manager : MonoBehaviour
     public GameObject CuadernoWorldSpace;
     public GameObject CuadernoOverlay;
     public GameObject textureButtons;
+    public GameObject refRelieves;
+    public GameObject refBiomas;
+    public GameObject refRegiones;
     public GameObject exitMapButton;
     public GameObject Inicios;
     public GameObject Bloqueador_Inicio;
@@ -119,8 +122,12 @@ public class UI_Manager : MonoBehaviour
     }
     public void switchTexture()
     {
+        refRelieves.SetActive(false);
+        refBiomas.SetActive(false);
+        refRegiones.SetActive(false);
         if(EventSystem.current.currentSelectedGameObject.name == "Relieves")
         {
+            refRelieves.SetActive(true);
             foreach (var provincia in provincias)
             {
                 provincia.GetComponent<MeshRenderer>().material.mainTexture = relieveTexture;
@@ -128,6 +135,7 @@ public class UI_Manager : MonoBehaviour
         }
         if(EventSystem.current.currentSelectedGameObject.name == "Biomas")
         {
+            refBiomas.SetActive(true);
             foreach (var provincia in provincias)
             {
                 provincia.GetComponent<MeshRenderer>().material.mainTexture = biomasTexture;
@@ -142,6 +150,7 @@ public class UI_Manager : MonoBehaviour
         }
         if(EventSystem.current.currentSelectedGameObject.name == "Regiones")
         {
+            refRegiones.SetActive(true);
             foreach (var provincia in provincias)
             {
                 provincia.GetComponent<MeshRenderer>().material.mainTexture = regionesTexture;
