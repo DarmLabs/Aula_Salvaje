@@ -118,10 +118,10 @@ TextureImporter:
       name: InfoMinijuegos_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 879
-        width: 1884
-        height: 381
+        x: 11
+        y: 888
+        width: 378
+        height: 375
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: InfoMinijuegos_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 458
-        width: 1884
-        height: 381
+        x: 1136
+        y: 893
+        width: 377
+        height: 376
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: InfoMinijuegos_5
       rect:
         serializedVersion: 2
-        x: 1136
-        y: 0
-        width: 430
-        height: 334
+        x: 1531
+        y: 883
+        width: 346
+        height: 386
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -591,7 +591,13 @@ MonoBehaviour:
   - {fileID: 3975426749523633489, guid: 24b40a4843503624095f14331b54a682, type: 3}
   - {fileID: 7818098670389652124, guid: a920d8bebfeb1f64986027ff32ba34b5, type: 3}
   - {fileID: 5898250517232744295, guid: 70e4060140a6d654d979711f066c5d71, type: 3}
-  visualFeedback: {fileID: 9149220889690662224, guid: 016d38b21c37c744e946f7825183fcba, type: 3}
+  visualFeedbacks:
+  - {fileID: 3502508038698071210, guid: 2e33f9f66e18a594eaf91e46e672a5b6, type: 3}
+  - {fileID: 4152365740221987325, guid: 37eb2b40998b84444a7112cae470e74d, type: 3}
+  - {fileID: 2395876689901718301, guid: 4517fce707a56444ab4d184a631694c1, type: 3}
+  countBasura: 0
+  countBien: 0
+  countMal: 0
 --- !u!50 &541821749
 Rigidbody2D:
   serializedVersion: 4
