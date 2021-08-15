@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &296571608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479104865}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.205908, y: 2.4891157, z: 0}
+  m_LocalPosition: {x: -8.52, y: 2.4891157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 888199395}
@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 541821745}
   - component: {fileID: 541821747}
   - component: {fileID: 541821748}
+  - component: {fileID: 541821749}
   m_Layer: 0
   m_Name: Player
   m_TagString: Jugador
@@ -548,7 +549,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08538741, y: 1.6413344}
+  m_Offset: {x: -0.025907993, y: 1.4480265}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -559,7 +560,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4148278, y: 1.5173314}
+  m_Size: {x: 2.522637, y: 1.1307156}
   m_EdgeRadius: 0
 --- !u!114 &541821748
 MonoBehaviour:
@@ -573,6 +574,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81ed8bbab3a20a4d8249d8cba40eacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dietas:
+  - Carnivoro
+  - Herbivoro
+  - Omnivoro
+  Dieta: 
+  AnimalesCarnivoros:
+  - {fileID: 583990808827136977, guid: b794c06597eefb145a20b8cd446e1776, type: 3}
+  - {fileID: 8787620287584704163, guid: fcf953080f20a654a80cf1ec29653a17, type: 3}
+  - {fileID: 643028838173167999, guid: a3763a11f596a0a4fa65ba15c1a8c424, type: 3}
+  AnimalesHerbivoros:
+  - {fileID: 688124161221181082, guid: 41eccb712cf8b3949ab94c9edd5d0520, type: 3}
+  - {fileID: 4027087527955441174, guid: 5958c9d7c49e87a428e12c67146bf2ce, type: 3}
+  - {fileID: 8669181984709187062, guid: 0e2c8a3873ff6ab43820e234f4139e94, type: 3}
+  AnimalesOmnivoros:
+  - {fileID: 3975426749523633489, guid: 24b40a4843503624095f14331b54a682, type: 3}
+  - {fileID: 7818098670389652124, guid: a920d8bebfeb1f64986027ff32ba34b5, type: 3}
+  - {fileID: 5898250517232744295, guid: 70e4060140a6d654d979711f066c5d71, type: 3}
+  visualFeedback: {fileID: 9149220889690662224, guid: 016d38b21c37c744e946f7825183fcba, type: 3}
+--- !u!50 &541821749
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541821744}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &627099859
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +671,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &627099862
 Canvas:
   m_ObjectHideFlags: 0
@@ -1974,7 +2014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514386746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.174091, y: 2.4891157, z: 0}
+  m_LocalPosition: {x: 7.63, y: 2.4891157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 888199395}
