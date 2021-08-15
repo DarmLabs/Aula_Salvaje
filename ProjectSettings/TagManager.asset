@@ -12,6 +12,7 @@ TagManager:
   - Alimentacion
   - Jugador
   - Basura
+  - card
   layers:
   - Default
   - TransparentFX
