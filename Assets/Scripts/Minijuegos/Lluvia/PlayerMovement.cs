@@ -13,17 +13,17 @@ public class PlayerMovement : MonoBehaviour
     public GameObject visualFeedback;
     void Start()
     {        
-        Dieta = Dietas[Random.Range(0,2)];
+        Dieta = Dietas[Random.Range(0,3)];
         switch (Dieta)
         {
         case "Carnivoro":
-            Instantiate(AnimalesCarnivoros[Random.Range(0,2)],positionRef,transform.rotation);
+            Instantiate(AnimalesCarnivoros[Random.Range(0,3)],positionRef,transform.rotation);
             break;
         case "Herbivoro":
-            Instantiate(AnimalesHerbivoros[Random.Range(0,2)],positionRef,transform.rotation);
+            Instantiate(AnimalesHerbivoros[Random.Range(0,3)],positionRef,transform.rotation);
             break;
         case "Omnivoro":
-            Instantiate(AnimalesOmnivoros[Random.Range(0,2)],positionRef,transform.rotation);
+            Instantiate(AnimalesOmnivoros[Random.Range(0,3)],positionRef,transform.rotation);
             break;        
         }
     }
@@ -47,6 +47,17 @@ public class PlayerMovement : MonoBehaviour
             GameObject Bien = Instantiate(visualFeedback,other.gameObject.transform.position,transform.rotation);
             Destroy(Bien,0.4f);    
         }
+        if(Dieta == "Omnivoro")
+        {
+            if (other.gameObject.tag == "Carnivoro" || other.gameObject.tag == "Herbivoro" )
+            {            
+                Destroy(other.gameObject);
+                GameObject Bien = Instantiate(visualFeedback,other.gameObject.transform.position,transform.rotation);
+                Destroy(Bien,0.4f);    
+            }
+
+        }
+        
        
     }
 
