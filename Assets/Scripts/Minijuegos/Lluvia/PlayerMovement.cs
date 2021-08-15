@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public int countBien = 0; //
     public int countMal = 0; //
     private Collider colision;
-    
+
     void Start()
     {        
         Dieta = Dietas[Random.Range(0,3)];
@@ -31,19 +31,16 @@ public class PlayerMovement : MonoBehaviour
             GameObject Carta2 = Instantiate(AnimalesOmnivoros[Random.Range(0,3)],positionRef,transform.rotation); 
             break;        
         }
-    }
-   
+    }   
     void Update()
     {
         Movimiento();
     }
-
     void Movimiento()
     {
         float h = Input.GetAxis("Mouse X");
         this.gameObject.transform.Translate(h, 0f, 0f);
     }
-
     void OnCollisionEnter2D(Collision2D other) 
     {
         if (other.gameObject.tag == Dieta)
