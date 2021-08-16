@@ -418,6 +418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149862188028700901, guid: b794c06597eefb145a20b8cd446e1776, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b794c06597eefb145a20b8cd446e1776, type: 3}
 --- !u!4 &5937412495318337213 stripped
@@ -432,6 +436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4859960245163112661}
     m_Modifications:
+    - target: {fileID: 4316996135076867489, guid: fcf953080f20a654a80cf1ec29653a17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6576874957935200973, guid: fcf953080f20a654a80cf1ec29653a17, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -497,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 643028838173167999, guid: a3763a11f596a0a4fa65ba15c1a8c424, type: 3}
       propertyPath: m_Name
       value: "Monta\xF1a_23"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5020352276613498517, guid: a3763a11f596a0a4fa65ba15c1a8c424, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8984946899163280821, guid: a3763a11f596a0a4fa65ba15c1a8c424, type: 3}
       propertyPath: m_RootOrder
