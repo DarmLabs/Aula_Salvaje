@@ -43,7 +43,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8468451300129112527}
   - component: {fileID: 3739907789693836260}
-  - component: {fileID: 3555758679858991754}
   m_Layer: 0
   m_Name: Carnivoro
   m_TagString: Carnivoro
@@ -59,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633267758864695560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4898624, y: 3.8589368, z: 0.32075226}
+  m_LocalPosition: {x: -3.4898624, y: 3.8589368, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 3348345933901264380}
@@ -116,32 +115,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3555758679858991754
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633267758864695560}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.79, y: 13.8388405}
-    newSize: {x: 12.79, y: 13.8388405}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 12.79, y: 13.8388405}
-  m_EdgeRadius: 0
 --- !u!1 &2034071246301130888
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +125,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4202034183424440329}
   - component: {fileID: 6499338559772912386}
-  - component: {fileID: 6651324840685423666}
   m_Layer: 0
   m_Name: Omnivoro
   m_TagString: Omnivoro
@@ -168,7 +140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034071246301130888}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3701377, y: 3.8589368, z: 0.32075226}
+  m_LocalPosition: {x: 4.3701377, y: 3.8589368, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 3348345933901264380}
@@ -225,32 +197,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6651324840685423666
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034071246301130888}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.53, y: 13.998943}
-    newSize: {x: 11.53, y: 13.998943}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 11.53, y: 13.998943}
-  m_EdgeRadius: 0
 --- !u!1 &7757294289178403173
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +207,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2995349570463300164}
   - component: {fileID: 2698291672246776376}
-  - component: {fileID: 6293084875630987217}
   m_Layer: 0
   m_Name: Herbivoro
   m_TagString: Herbivoro
@@ -277,7 +222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7757294289178403173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4401376, y: 3.8589368, z: 0.32075226}
+  m_LocalPosition: {x: 0.4401376, y: 3.8589368, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 3348345933901264380}
@@ -334,29 +279,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6293084875630987217
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7757294289178403173}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.57, y: 13.9689245}
-    newSize: {x: 12.57, y: 13.9689245}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 12.57, y: 13.9689245}
-  m_EdgeRadius: 0

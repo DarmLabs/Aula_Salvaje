@@ -133,7 +133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3542942571366525390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.55, y: -2.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7867269922809503419}
@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Monta\xF1a_10"
       objectReference: {fileID: 0}
+    - target: {fileID: 5414736102666411581, guid: 24b40a4843503624095f14331b54a682, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6499144285332568617, guid: 24b40a4843503624095f14331b54a682, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -550,6 +554,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6320334236852103608}
     m_Modifications:
+    - target: {fileID: 299196446461638774, guid: 70e4060140a6d654d979711f066c5d71, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 819727480452425088, guid: 70e4060140a6d654d979711f066c5d71, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -670,6 +678,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5840031293801878854, guid: a920d8bebfeb1f64986027ff32ba34b5, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353805707328320916, guid: a920d8bebfeb1f64986027ff32ba34b5, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7818098670389652124, guid: a920d8bebfeb1f64986027ff32ba34b5, type: 3}

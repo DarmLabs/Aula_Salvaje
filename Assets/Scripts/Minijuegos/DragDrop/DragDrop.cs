@@ -30,7 +30,7 @@ public class DragDrop : MonoBehaviour
         dragging = false;
     }
  
-    void OnCollisionEnter(Collision other) 
+    void OnCollisionEnter2D(Collision2D other) 
     {
         Debug.Log("Entro");
         if (other.gameObject.tag == "Alimentacion" && other.gameObject.name == this.gameObject.tag)
@@ -47,7 +47,7 @@ public class DragDrop : MonoBehaviour
             }
         }
     }
-
+   
 
 
     
