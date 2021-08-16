@@ -8582,6 +8582,7 @@ MonoBehaviour:
   exitMapButton: {fileID: 188641857}
   Inicios: {fileID: 1205815735}
   Bloqueador_Inicio: {fileID: 1474136339}
+  AudioManager: {fileID: 0}
   relieveTexture: {fileID: 2800000, guid: 4ecea4134dd8ac341a96802d1b3a7fa3, type: 3}
   biomasTexture: {fileID: 2800000, guid: 86d7b41267a40034cb882f08fe798a85, type: 3}
   provinciasTexture: {fileID: 2800000, guid: 0e0fb2fd4a584c645b0e3532a3106931, type: 3}
@@ -8778,8 +8779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.52, y: -0.62}
-  m_SizeDelta: {x: 240.6, y: 211.32}
+  m_AnchoredPosition: {x: 3.2, y: -0.13}
+  m_SizeDelta: {x: 218.82, y: 173.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039742699
 MonoBehaviour:
@@ -14145,7 +14146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 91d10f9bab2ca43489f3c5622aa5fb7e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9db67c1c46f4a734f98a83184e3e2d5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

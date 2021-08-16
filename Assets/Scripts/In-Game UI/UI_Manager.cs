@@ -23,6 +23,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject exitMapButton;
     public GameObject Inicios;
     public GameObject Bloqueador_Inicio;
+    public GameObject AudioManager;
     string selectedButton;
     string previousButton;
     GameObject clickedButton;
@@ -35,6 +36,13 @@ public class UI_Manager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+        AudioManager = GameObject.Find("AudioController");
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(1).transform.GetChild(1).GetComponent<AudioSource>().Stop();
+            AudioManager.transform.GetChild(1).transform.GetChild(2).GetComponent<AudioSource>().Stop();
+        }
+        
         Name.gameObject.SetActive(false);
         provincias = GameObject.FindGameObjectsWithTag("OffProvincia");
     }
@@ -53,7 +61,6 @@ public class UI_Manager : MonoBehaviour
     public void SelectionOn()
     {
         selectedProvincia = Animales.transform.Find(GetComponent<MapManager>().currentProvincia).gameObject;
-        
         selectedProvincia.SetActive(true);
     }
     public void SelectionOff()
@@ -66,11 +73,13 @@ public class UI_Manager : MonoBehaviour
         LeftButton.GetComponent<Button>().enabled = false;
         GetComponent<MapManager>().enabled = false;
         ScreenOnLeft = false;
+        ButtonSound();
     }
     public void SlideToLeft()
     {
         GetComponent<Animator>().Play("Deslizar Izquierda");
         RightButton.GetComponent<Button>().enabled = false;
+        ButtonSound();
     }
     public void OnRight()
     {
@@ -107,6 +116,7 @@ public class UI_Manager : MonoBehaviour
         clickedButton.SetActive(false);
         Inicios.transform.Find(selectedButton).gameObject.SetActive(true);
         previousButton = selectedButton;
+        FlapSound();
     }
     public void ChangeScene()
     {
@@ -119,6 +129,7 @@ public class UI_Manager : MonoBehaviour
     public void exitMapButtonOff()
     {
         exitMapButton.SetActive(false);
+        ButtonSound();
     }
     public void switchTexture()
     {
@@ -156,5 +167,20 @@ public class UI_Manager : MonoBehaviour
                 provincia.GetComponent<MeshRenderer>().material.mainTexture = regionesTexture;
             }
         }
+        ButtonSound();
+    }
+    public void ButtonSound()
+    {
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(0).transform.GetChild(0).GetComponent<AudioSource>().Play();
+        }      
+    }
+    public void FlapSound()
+    {
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(0).transform.GetChild(1).GetComponent<AudioSource>().Play();
+        }   
     }
 }
