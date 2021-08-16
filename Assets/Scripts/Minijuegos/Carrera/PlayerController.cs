@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     private float velocidadV = 10f;
-    private float velocidadH = 3f;
+    private float velocidadH = 2.5f;
 
     
     void Start() 
@@ -40,6 +40,9 @@ public class PlayerController : MonoBehaviour
             break;
             case "Pozo":
             velocidadH = velocidadH - 0.4f;
+            break;
+            case "Meta":
+            //Ganó
             break;
         }
     }
