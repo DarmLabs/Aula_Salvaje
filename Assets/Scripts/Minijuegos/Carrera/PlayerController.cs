@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
        
         float h = Input.GetAxis("Mouse Y");        
         rb.velocity = new Vector2(velocidadH,h*velocidadV);
-        transform.Rotate(0,0,-velocidadH);     
+        transform.Rotate(0,0,-(velocidadH/2));     
     }
     void OnCollisionEnter2D(Collision2D other) 
     {
