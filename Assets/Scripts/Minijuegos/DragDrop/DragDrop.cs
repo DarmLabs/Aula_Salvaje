@@ -35,6 +35,17 @@ public class DragDrop : MonoBehaviour
    
     void OnCollisionStay(Collision other) 
     {
+        if (countCorrect+countIncorrect == 5)
+        {
+            if (countIncorrect>countCorrect)
+            {
+                //Perdió
+            }
+            else
+            {
+                //Ganó
+            }
+        }
         if (dragging == false)
         {
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name != this.gameObject.tag)
