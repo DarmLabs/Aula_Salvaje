@@ -9,8 +9,10 @@ public class VeoVeo_Manager : MonoBehaviour
     int numeroPlantillas;
     GameObject actualPlantillaPrefab;
     public GameObject actualPlantilla;
+    public GameObject AudioManager;
     void Start()
     {
+        AudioManager = GameObject.Find("AudioController");
         StartCoroutine(spawnAfterTime(5));
     }
     public int intentos = 3;
@@ -25,6 +27,7 @@ public class VeoVeo_Manager : MonoBehaviour
     }
     public void selectCard()
     {
+        ButtonSound();
         if(EventSystem.current.currentSelectedGameObject.name == "Correcto")
         {
             GetComponent<MiniGame_Manager>().Win_miniGame();
@@ -48,5 +51,12 @@ public class VeoVeo_Manager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(secs);
         SpawnRandomPlantilla();
+    }
+    public void ButtonSound()
+    {
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(0).transform.GetChild(0).GetComponent<AudioSource>().Play();
+        }      
     }
 }

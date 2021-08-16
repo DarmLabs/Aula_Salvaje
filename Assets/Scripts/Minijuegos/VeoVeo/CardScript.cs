@@ -14,10 +14,10 @@ public class CardScript : MonoBehaviour
         {
             GetComponent<Button>().onClick.AddListener(wrongCard);
         }
-        
     }
     void wrongCard()
     {
+        veoVeo_Manager.ButtonSound();
         GetComponent<Image>().color = Color.gray;
         GetComponent<Button>().interactable =false;
     }

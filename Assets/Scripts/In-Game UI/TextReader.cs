@@ -10,8 +10,17 @@ public class TextReader : MonoBehaviour
     string animName;
     public GameObject InfoPanel;
     public GameObject TituloPanel;
+    public GameObject AudioManager;
+    void Start()
+    {
+        AudioManager = GameObject.Find("AudioController");
+    }
     public void PrintFiles()
     {
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(0).transform.GetChild(2).GetComponent<AudioSource>().Play();
+        }   
         animName = EventSystem.current.currentSelectedGameObject.name;
         TextAsset file = Resources.Load<TextAsset>("InfoAnimales/"+animName);
         if(file != null)
