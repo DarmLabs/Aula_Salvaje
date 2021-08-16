@@ -8,6 +8,8 @@ public class DragDrop : MonoBehaviour
     private float distance; 
     private int countCorrect = 0;
     private int countIncorrect = 0;
+
+    public GameObject[] visualFeedbacks;
    
     void Update()
     {
@@ -29,24 +31,28 @@ public class DragDrop : MonoBehaviour
     void OnMouseUp()
     {
         dragging = false;
-    }
- 
-    void OnCollisionEnter(Collision other) 
+    } 
+   
+    void OnCollisionStay(Collision other) 
     {
-        Debug.Log("Entro");
-        if (other.gameObject.tag == "Alimentacion" && other.gameObject.name == this.gameObject.tag)
-        {
-            Destroy(this.gameObject);
-            countCorrect+=1;
-        }
         if (dragging == false)
         {
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name != this.gameObject.tag)
             {
                 Destroy(this.gameObject);
                 countIncorrect+=1; 
+                GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
+                Destroy(Mal,0.4f);
             }
-        }
+            
+            if (other.gameObject.tag == "Alimentacion" && other.gameObject.name == this.gameObject.tag)
+            {
+                Destroy(this.gameObject);
+                countCorrect+=1;
+                GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                Destroy(Bien,0.4f);   
+            }
+        } 
     }
    
 
