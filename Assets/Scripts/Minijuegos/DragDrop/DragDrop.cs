@@ -15,6 +15,7 @@ public class DragDrop : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
+            rayPoint.z = 0;
             transform.position = rayPoint;
         }
     } 
