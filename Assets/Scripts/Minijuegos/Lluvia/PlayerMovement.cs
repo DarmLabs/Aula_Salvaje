@@ -16,8 +16,12 @@ public class PlayerMovement : MonoBehaviour
     public int countMal = 0; //
     private Collider colision;
 
+    Rigidbody2D rb;
+    private float velocidad = 10f;
+
     void Start()
     {        
+        rb = GetComponent<Rigidbody2D>();
         Dieta = Dietas[Random.Range(0,3)];
         switch (Dieta)
         {
@@ -38,8 +42,16 @@ public class PlayerMovement : MonoBehaviour
     }
     void Movimiento()
     {
-        float h = Input.GetAxis("Mouse X");
-        this.gameObject.transform.Translate(h, 0f, 0f);
+        float h = Input.GetAxis("Mouse X");        
+        rb.velocity = new Vector2(h*velocidad,0f);
+        if (countBien>=25)
+        {
+            //Gano
+        }
+        if (countMal >= 15 || countBasura >= 15)
+        {
+            //Perdio
+        }
     }
     void OnCollisionEnter2D(Collision2D other) 
     {
@@ -67,19 +79,22 @@ public class PlayerMovement : MonoBehaviour
             GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
             Destroy(Mal,0.4f);    
         }        
+        
         switch (Dieta)
         {
         case "Carnivoro":
             if (other.gameObject.tag == "Herbivoro")
             Destroy(other.gameObject);
             GameObject MalH = Instantiate(visualFeedbacks[2],other.gameObject.transform.position,transform.rotation);
-            Destroy(MalH,0.4f);    
+            Destroy(MalH,0.4f);  
+            countMal+=1;  
             break;
         case "Herbivoro":
             if (other.gameObject.tag == "Carnivoro")
             Destroy(other.gameObject);
             GameObject MalC = Instantiate(visualFeedbacks[2],other.gameObject.transform.position,transform.rotation);
-            Destroy(MalC,0.4f);       
+            Destroy(MalC,0.4f);
+            countMal+=1;         
             break;               
         }
         

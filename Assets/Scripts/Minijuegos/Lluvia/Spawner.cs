@@ -8,13 +8,13 @@ public class Spawner : MonoBehaviour
     public Transform[] spawnPoints;
     private int indexComidas = 12;
     private int indexSpawnpos = 7;
-
-    //private float timeSpawn = 3f;
+    public float timeSpawn = 1f;
 
     
     void Start () 
     {
-        InvokeRepeating("invocarComida", 0.3f, 0.7f);
+        InvokeRepeating("invocarComida", 0.3f, timeSpawn);
+        
     }
 
     void Update()

@@ -13,6 +13,7 @@ TagManager:
   - Jugador
   - Basura
   - card
+  - Pared
   layers:
   - Default
   - TransparentFX
