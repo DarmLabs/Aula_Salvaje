@@ -15,10 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public int countBien = 0; //
     public int countMal = 0; //
     private Collider colision;
-
     Rigidbody2D rb;
     private float velocidad = 10f;
-
+    public GameObject objManager;
     void Start()
     {        
         rb = GetComponent<Rigidbody2D>();
@@ -46,11 +45,11 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(h*velocidad,0f);
         if (countBien>=25)
         {
-            //Gano
+            objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
         }
         if (countMal >= 15 || countBasura >= 15)
         {
-            //Perdio
+            objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
         }
     }
     void OnCollisionEnter2D(Collision2D other) 

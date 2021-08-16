@@ -48,6 +48,7 @@ public class MiniGame_Manager : MonoBehaviour
                 }
                 Panel.SetActive(false);
                 Panel.transform.GetChild(3).gameObject.SetActive(false);
+                Time.timeScale = 1;
             }
         }
     }
@@ -66,10 +67,12 @@ public class MiniGame_Manager : MonoBehaviour
     {
         Panel.SetActive(true);
         Panel.transform.GetChild(2).gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
     public void Lose_miniGame()
     {
         Panel.SetActive(true);
         Panel.transform.GetChild(3).gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 }
