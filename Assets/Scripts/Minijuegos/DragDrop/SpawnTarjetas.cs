@@ -22,10 +22,7 @@ public class SpawnTarjetas : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        
-    }
+   
 
    
    
