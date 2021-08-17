@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject objManager;
     void Start()
     {        
+        Cursor.lockState = CursorLockMode.Locked;
+        
         rb = GetComponent<Rigidbody2D>();
         Dieta = Dietas[Random.Range(0,3)];
         switch (Dieta)
@@ -46,10 +48,12 @@ public class PlayerMovement : MonoBehaviour
         if (countBien>=25)
         {
             objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
+            Cursor.lockState = CursorLockMode.None;
         }
         if (countMal >= 15 || countBasura >= 15)
         {
             objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
