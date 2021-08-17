@@ -6,7 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     private float velocidadV = 10f;
-    private float velocidadH = 2.5f;
+    
+    [SerializeField]
+    private float velocidadH = 5f;
+    public GameObject[] visualFeedbacks;
 
     
     void Start() 
@@ -25,21 +28,35 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(velocidadH,h*velocidadV);
         transform.Rotate(0,0,-(velocidadH/2));     
     }
+    
     void OnCollisionEnter2D(Collision2D other) 
-    {
+    {         
+        Debug.Log(other.gameObject.name);
         switch (other.gameObject.name)
         {
-            case "Cactus":
+            case "Cactus(Clone)":
+            GameObject MalCa = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
+            Destroy(MalCa,0.4f); 
             velocidadH = velocidadH - 0.3f;
+            Destroy(other.gameObject);
             break;
-            case "Charco":
+            case "Charco(Clone)":
+            GameObject MalCh = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
+            Destroy(MalCh,0.4f); 
             velocidadH = velocidadH - 0.1f;
+            Destroy(other.gameObject);
             break;
-            case "Piedras":
+            case "Piedras(Clone)":
+            GameObject MalPi = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
+            Destroy(MalPi,0.4f); 
             velocidadH = velocidadH - 0.5f;
+            Destroy(other.gameObject);
             break;
-            case "Pozo":
+            case "Pozo(Clone)":
+            GameObject MalPo = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
+            Destroy(MalPo,0.4f); 
             velocidadH = velocidadH - 0.4f;
+            Destroy(other.gameObject);
             break;
             case "Meta":
             //Ganó
