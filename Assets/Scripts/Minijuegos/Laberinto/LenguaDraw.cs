@@ -6,6 +6,7 @@ public class LenguaDraw : MonoBehaviour
 {
     public GameObject linePrefab;
     public GameObject currentLine;
+    //public Transform posicionInicial;
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
@@ -19,6 +20,7 @@ public class LenguaDraw : MonoBehaviour
     }
     void Update()
     {
+        
         if(Input.GetMouseButtonDown(0))
         {
             CreateLine();
