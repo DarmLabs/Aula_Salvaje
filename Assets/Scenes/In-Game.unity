@@ -8815,18 +8815,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.95
-  m_Text: 'VEO VEO
-
-    LA MEMORIA
-
-    LLUVIA DE COMIDA
-
-    ARRASTRA AL CORRECTO
-
-    LABERINTO
-    DEL OSO HORIMGUERO
-
-    TATU CARRERA'
+  m_Text: "VEO VEO\nLA MEMORIA\nLLUVIA DE COMIDA\nARRASTRA AL CORRECTO\nLABERINTO
+    DEL OSO HORMIGUERO\nTAT\xDA CARRERA"
 --- !u!222 &1039742700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11016,6 +11006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InfoPanel: {fileID: 1491558706}
   TituloPanel: {fileID: 1673679568}
+  AudioManager: {fileID: 0}
 --- !u!4 &1282692195
 Transform:
   m_ObjectHideFlags: 0
@@ -11100,8 +11091,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.8
-  m_Text: "REG\xCDON NOROESTE\nREG\xCDON NORESTE\nREG\xCDON PAMPEANA\nREG\xCDON DE
-    CUYO\nREG\xCDON PATAG\xD3NICA"
+  m_Text: "REGI\xD3N NOROESTE\nREGI\xD3N NORESTE\nREGI\xD3N PAMPEANA\nREGI\xD3N DE
+    CUYO\nREGI\xD3N PATAG\xD3NICA"
 --- !u!222 &1285524589
 CanvasRenderer:
   m_ObjectHideFlags: 0
