@@ -40,11 +40,6 @@ public class MiniGame_Manager : MonoBehaviour
         Panel.SetActive(false);
         Panel.transform.GetChild(0).gameObject.SetActive(false);
         Time.timeScale = 1;
-        if(SceneManager.GetActiveScene().name == "LluviadeComida" || SceneManager.GetActiveScene().name == "Carrera")
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
     }
     public void Restart()
     {

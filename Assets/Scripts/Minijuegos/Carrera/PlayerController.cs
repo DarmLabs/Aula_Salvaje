@@ -35,16 +35,6 @@ public class PlayerController : MonoBehaviour
         {
             objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
         }    
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-           Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        if (Input.GetKeyUp(KeyCode.Space) && Time.timeScale !=0)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
     }
     
     void OnCollisionEnter2D(Collision2D other) 
