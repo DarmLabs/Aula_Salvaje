@@ -12,10 +12,12 @@ public class Cards : MonoBehaviour
     public static Queue<Cards> sequence;
 
     public static int pairsFound;
+    public GameObject objManager;
     
 
     void Start()
-    {
+    {      
+        objManager = GameObject.Find("Canvas Overlay");
         facedUp=false;
         coroutineAllowed=true;
         locked=false;
@@ -34,34 +36,36 @@ public class Cards : MonoBehaviour
 
     public IEnumerator RotateCard()
     {
-        coroutineAllowed=false;
-        if(!facedUp)
+        if(Time.timeScale != 0)
         {
-            sequence.Enqueue(this);
-            for (float i = 0f; i < 190f; i+=10)
+            coroutineAllowed=false;
+            if(!facedUp)
             {
-                transform.rotation = Quaternion.Euler(0f,i,0f);
-                yield return new WaitForSeconds(0f);
+                sequence.Enqueue(this);
+                for (float i = 0f; i < 190f; i+=10)
+                {
+                    transform.rotation = Quaternion.Euler(0f,i,0f);
+                    yield return new WaitForSeconds(0f);
+                }
             }
-        }
-        else if (facedUp)
-        {
-            for (float i = 190f; i >= 0f; i-=10)
+            else if (facedUp)
             {
-                transform.rotation=Quaternion.Euler(0f,i,0f);
-                yield return new WaitForSeconds(0f);
-                sequence.Clear();
+                for (float i = 190f; i >= 0f; i-=10)
+                {
+                    transform.rotation=Quaternion.Euler(0f,i,0f);
+                    yield return new WaitForSeconds(0f);
+                    sequence.Clear();
+                }
             }
-        }
-        coroutineAllowed=true;
+            coroutineAllowed=true;
         
-        facedUp=!facedUp;
+            facedUp=!facedUp;
 
-        if(sequence.Count ==2)
-        {
-            CheckResults();
+            if(sequence.Count ==2)
+            {
+                CheckResults();
+            }
         }
-
     }
 
     void CheckResults()
@@ -86,7 +90,7 @@ public class Cards : MonoBehaviour
 
         if (pairsFound == 5)
         {
-            //Ganó
+            objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
         }
     }
 
