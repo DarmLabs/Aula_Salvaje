@@ -12,7 +12,7 @@ public class DragDrop : MonoBehaviour
     public GameObject[] visualFeedbacks;
     
     void Start()
-    {
+    {        
         objManager = GameObject.Find("Canvas Overlay");
     }
     void Update()
@@ -37,8 +37,9 @@ public class DragDrop : MonoBehaviour
         dragging = false;
     } 
    
-    void OnCollisionStay(Collision other) 
+    void OnCollisionEnter(Collision other) 
     {
+        Debug.Log("entro");
         if (countCorrect+countIncorrect == 5)
         {
             if (countIncorrect>countCorrect)
@@ -55,20 +56,21 @@ public class DragDrop : MonoBehaviour
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name != this.gameObject.tag)
             {
                 Destroy(this.gameObject);
-                countIncorrect+=1; 
+                countIncorrect+=1;                
+                Debug.Log("countIncorrect"+countIncorrect);
                 GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
                 Destroy(Mal,0.4f);
-            }
-            
+            }            
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name == this.gameObject.tag)
             {
                 Destroy(this.gameObject);
                 countCorrect+=1;
+                Debug.Log("countCorrect"+countCorrect);
                 GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
                 Destroy(Bien,0.4f);   
             }
         } 
-    }
+    }  
    
 
 
