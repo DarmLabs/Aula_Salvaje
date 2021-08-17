@@ -71,7 +71,10 @@ public class MiniGame_Manager : MonoBehaviour
     }
     public void Exit()
     {
-        AudioManager.transform.GetChild(1).transform.GetChild(0).GetComponent<AudioSource>().Play();
+        if(AudioManager != null)
+        {
+            AudioManager.transform.GetChild(1).transform.GetChild(0).GetComponent<AudioSource>().Play();
+        }
         ButtonSound();
         SceneManager.LoadScene(1);
     }
