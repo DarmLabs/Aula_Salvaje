@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public int countMal = 0; //
     private Collider colision;
     Rigidbody2D rb;
-    private float velocidad = 10f;
+    private float velocidad = 15f;
     public GameObject objManager;
     void Start()
     {        
@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
             {            
                 countMal += 1;
                 Destroy(other.gameObject);
-                GameObject Mal = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
                 Destroy(Mal,0.4f);    
             }            
         }
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
             {            
                 countMal += 1;
                 Destroy(other.gameObject);
-                GameObject Mal = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
                 Destroy(Mal,0.4f);    
             }            
         }
