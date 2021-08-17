@@ -11,6 +11,8 @@ public class LenguaDraw : MonoBehaviour
     public EdgeCollider2D edgeCollider;
 
     public List<Vector2> fingerPositions;
+
+    private bool singleLine=true;
     void Start()
     {
         
@@ -32,10 +34,13 @@ public class LenguaDraw : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             Debug.Log("Pressed left click.");
+            singleLine=false;
         }
     }
     void CreateLine()
     {
+        if(singleLine)
+        {
         currentLine=Instantiate(linePrefab,Vector3.zero,Quaternion.identity);
         lineRenderer= currentLine.GetComponent<LineRenderer>();
         edgeCollider = currentLine.GetComponent<EdgeCollider2D>();
@@ -45,6 +50,8 @@ public class LenguaDraw : MonoBehaviour
         lineRenderer.SetPosition(0,fingerPositions[0]);
         lineRenderer.SetPosition(1,fingerPositions[1]);
         edgeCollider.points = fingerPositions.ToArray();
+        }
+        
     }
     void UpdateLine(Vector2 newFingerPos)
     {
@@ -53,5 +60,6 @@ public class LenguaDraw : MonoBehaviour
         lineRenderer.SetPosition(lineRenderer.positionCount-1,newFingerPos);
         edgeCollider.points = fingerPositions.ToArray();
     }
+    
 
 }
