@@ -13,6 +13,7 @@ public class LenguaDraw : MonoBehaviour
 
     public List<Vector2> fingerPositions;
 
+    public GameObject inicioLine;
     private bool singleLine=true;
     void Start()
     {
@@ -49,7 +50,8 @@ public class LenguaDraw : MonoBehaviour
         fingerPositions.Clear();
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        lineRenderer.SetPosition(0,fingerPositions[0]);
+        lineRenderer.SetPosition(0,inicioLine.transform.position);
+      //  lineRenderer.SetPosition(0,fingerPositions[0]);
         lineRenderer.SetPosition(1,fingerPositions[1]);
         edgeCollider.points = fingerPositions.ToArray();
         }
