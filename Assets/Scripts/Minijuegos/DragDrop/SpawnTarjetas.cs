@@ -14,7 +14,7 @@ public class SpawnTarjetas : MonoBehaviour
     
     void Start () 
     {       
-           for (int i = 0; i < 5; i++)
+           for (int i = 0; i < 6; i++)
            {
                 indexRandom = Random.Range(0,indexTarjetas);        
                 Instantiate(Tarjetas[indexRandom],spawnPoints[i].position,transform.rotation);               

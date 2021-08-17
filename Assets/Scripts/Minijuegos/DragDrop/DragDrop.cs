@@ -6,8 +6,9 @@ public class DragDrop : MonoBehaviour
 {
     private bool dragging = false;
     private float distance; 
-    private int countCorrect = 0;
-    private int countIncorrect = 0;
+    public static int countCorrect = 0;
+    public static int countIncorrect = 0;
+    public int totalCount = 0;
     public GameObject objManager;
     public GameObject[] visualFeedbacks;
     
@@ -24,6 +25,8 @@ public class DragDrop : MonoBehaviour
             rayPoint.z = 0f;
             transform.position = rayPoint;
         }
+        condicionVictoria();
+        
     } 
     
     void OnMouseDown()
@@ -37,40 +40,43 @@ public class DragDrop : MonoBehaviour
         dragging = false;
     } 
    
-    void OnCollisionEnter(Collision other) 
-    {
-        Debug.Log("entro");
-        if (countCorrect+countIncorrect == 5)
-        {
-            if (countIncorrect>countCorrect)
-            {
-                objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
-            }
-            else
-            {
-                objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
-            }
-        }
+    void OnCollisionStay(Collision other) 
+    {               
         if (dragging == false)
         {
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name != this.gameObject.tag)
             {
-                Destroy(this.gameObject);
-                countIncorrect+=1;                
-                Debug.Log("countIncorrect"+countIncorrect);
+                countIncorrect+=1;         
+                Destroy(this.gameObject);                
                 GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
                 Destroy(Mal,0.4f);
             }            
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name == this.gameObject.tag)
             {
-                Destroy(this.gameObject);
-                countCorrect+=1;
-                Debug.Log("countCorrect"+countCorrect);
+                countCorrect+=1;               
+                Destroy(this.gameObject);               
                 GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
                 Destroy(Bien,0.4f);   
             }
         } 
     }  
+    void condicionVictoria()
+    {
+        totalCount = countCorrect+countIncorrect;
+       
+        if (totalCount == 5)
+        {
+            if (countIncorrect>countCorrect)
+            {
+                objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
+            }
+            if (countCorrect>countIncorrect)
+            {
+                objManager.GetComponent<MiniGame_Manager>().Win_miniGame(); 
+            }
+           
+        }
+    }
    
 
 
