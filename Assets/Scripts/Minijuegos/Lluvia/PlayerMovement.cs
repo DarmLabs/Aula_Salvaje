@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject[] AnimalesCarnivoros;// Sprites de animales según su alimentación
     public GameObject[] AnimalesHerbivoros;//   
     public GameObject[] AnimalesOmnivoros;//
-    Vector3 positionRef = new Vector3(13f, -5.4f, 5.7f); //Posición de referencia en pantalla   
+    Vector3 positionRef = new Vector3(14.11f, -5.4f, 5.7f); //Posición de referencia en pantalla   
     public GameObject[] visualFeedbacks;
     public int countBasura = 0; //Contadores para items atrapados
     public int countBien = 0; //
@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
             GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
             Destroy(Bien,0.4f);    
         }
+        
         if(Dieta == "Omnivoro")
         {
             if (other.gameObject.tag == "Carnivoro" || other.gameObject.tag == "Herbivoro" )
