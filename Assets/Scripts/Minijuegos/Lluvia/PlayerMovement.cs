@@ -66,13 +66,14 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other) 
     {
-        if (other.gameObject.tag == Dieta)
+        
+        /*if (other.gameObject.tag == Dieta)
         {            
             countBien += 1;
             Destroy(other.gameObject);
             GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
             Destroy(Bien,0.4f);    
-        }
+        }*/
         
         if(Dieta == "Omnivoro")
         {
@@ -84,15 +85,50 @@ public class PlayerMovement : MonoBehaviour
                 Destroy(Bien,0.4f);    
             }
         }
+        if(Dieta == "Herbivoro")
+        {
+            if (other.gameObject.tag == "Herbivoro" )
+            {            
+                countBien += 1;
+                Destroy(other.gameObject);
+                GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                Destroy(Bien,0.4f);    
+            }
+            if (other.gameObject.tag == "Carnivoro" )
+            {            
+                countMal += 1;
+                Destroy(other.gameObject);
+                GameObject Mal = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                Destroy(Mal,0.4f);    
+            }            
+        }
+         if(Dieta == "Carnivoro")
+        {
+            if (other.gameObject.tag == "Carnivoro" )
+            {            
+                countBien += 1;
+                Destroy(other.gameObject);
+                GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                Destroy(Bien,0.4f);    
+            }
+            if (other.gameObject.tag == "Herbivoro" )
+            {            
+                countMal += 1;
+                Destroy(other.gameObject);
+                GameObject Mal = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
+                Destroy(Mal,0.4f);    
+            }            
+        }
         if (other.gameObject.tag == "Basura")
         {            
             countBasura += 1;
             Destroy(other.gameObject);
             GameObject Mal = Instantiate(visualFeedbacks[1],other.gameObject.transform.position,transform.rotation);
             Destroy(Mal,0.4f);    
-        }        
+        }   
+
         
-        switch (Dieta)
+        /*switch (Dieta)
         {
         case "Carnivoro":
             if (other.gameObject.tag == "Herbivoro")
@@ -108,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
             Destroy(MalC,0.4f);
             countMal+=1;         
             break;               
-        }
+        }*/
         
        
     }
