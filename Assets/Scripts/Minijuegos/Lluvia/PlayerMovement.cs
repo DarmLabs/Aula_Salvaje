@@ -102,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
                 Destroy(Mal,0.4f);    
             }            
         }
-         if(Dieta == "Carnivoro")
+        if(Dieta == "Carnivoro")
         {
             if (other.gameObject.tag == "Carnivoro" )
             {            
