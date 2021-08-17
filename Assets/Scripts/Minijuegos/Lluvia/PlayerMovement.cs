@@ -57,6 +57,12 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+         if (Input.GetKeyDown(KeyCode.Escape))
+        {
+           Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
     }
     void OnCollisionEnter2D(Collision2D other) 
     {
