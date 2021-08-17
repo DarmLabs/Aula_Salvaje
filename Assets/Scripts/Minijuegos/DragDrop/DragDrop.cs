@@ -8,9 +8,13 @@ public class DragDrop : MonoBehaviour
     private float distance; 
     private int countCorrect = 0;
     private int countIncorrect = 0;
-
+    public GameObject objManager;
     public GameObject[] visualFeedbacks;
-   
+    
+    void Start()
+    {
+        objManager = GameObject.Find("Canvas Overlay");
+    }
     void Update()
     {
         if (dragging)
@@ -39,11 +43,11 @@ public class DragDrop : MonoBehaviour
         {
             if (countIncorrect>countCorrect)
             {
-                //Perdió
+                objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
             }
             else
             {
-                //Ganó
+                objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
             }
         }
         if (dragging == false)
