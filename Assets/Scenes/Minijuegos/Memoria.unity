@@ -447,7 +447,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &150936663
 GameObject:
@@ -1177,7 +1177,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &569076265
 GameObject:
@@ -1628,7 +1628,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &861375384
 GameObject:
@@ -2035,7 +2035,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1148925177
 GameObject:
@@ -2096,7 +2096,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1199152075
 GameObject:
@@ -2247,7 +2247,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 343102163439580669, guid: 28adba88679c6d749bd938a368562406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5200002, y: 4.690078}
@@ -2329,7 +2329,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7187258612091898581, guid: a749268bf3665c84192a2c062af9aa0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5510573, y: 4.7}
@@ -2411,7 +2411,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7953349785981758784, guid: a749268bf3665c84192a2c062af9aa0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.56106, y: 4.71}
@@ -2572,7 +2572,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 928350296949521611, guid: 1e864ba7a6667174b973df04331e0fec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5509086, y: 4.71}
@@ -2818,7 +2818,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 343102163439580669, guid: 28adba88679c6d749bd938a368562406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5200002, y: 4.690078}
@@ -2900,7 +2900,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -7541131923376690473, guid: 28adba88679c6d749bd938a368562406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5200002, y: 4.690078}
@@ -3050,7 +3050,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1599315737
 PrefabInstance:
@@ -3411,7 +3411,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1786906561
 GameObject:
@@ -3554,7 +3554,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1921514865
 GameObject:
@@ -3629,7 +3629,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7953349785981758784, guid: a749268bf3665c84192a2c062af9aa0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.56106, y: 4.71}
@@ -3697,7 +3697,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1995729461
 GameObject:
@@ -3772,7 +3772,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 928350296949521611, guid: 1e864ba7a6667174b973df04331e0fec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5509086, y: 4.71}
@@ -3854,7 +3854,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -7541131923376690473, guid: 28adba88679c6d749bd938a368562406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5200002, y: 4.690078}
@@ -3936,7 +3936,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7187258612091898581, guid: a749268bf3665c84192a2c062af9aa0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.5510573, y: 4.7}
@@ -4004,5 +4004,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.71, y: 3.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
