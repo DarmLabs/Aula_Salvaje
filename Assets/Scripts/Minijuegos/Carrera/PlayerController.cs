@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private float velocidadH = 5f;
     public GameObject[] visualFeedbacks;
 
+    private int choque = 0;
+
     
     void Start() 
     {
@@ -27,7 +29,12 @@ public class PlayerController : MonoBehaviour
        
         float h = Input.GetAxis("Mouse Y");        
         rb.velocity = new Vector2(velocidadH,h*velocidadV);
-        transform.Rotate(0,0,-(velocidadH/2));     
+        transform.Rotate(0,0,-(velocidadH/2)); 
+        if(choque == 4)
+        {
+            //Perdio
+            Debug.Log("perdio");
+        }    
     }
     
     void OnCollisionEnter2D(Collision2D other) 
@@ -37,7 +44,8 @@ public class PlayerController : MonoBehaviour
         {
             case "Cactus(Clone)":
             GameObject MalCa = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
-            Destroy(MalCa,0.4f); 
+            Destroy(MalCa,0.4f);
+            choque += 1;
             velocidadH = velocidadH - 0.3f;
             Destroy(other.gameObject);
             break;
@@ -50,10 +58,12 @@ public class PlayerController : MonoBehaviour
             case "Piedras(Clone)":
             GameObject MalPi = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
             Destroy(MalPi,0.4f); 
+            choque += 1;
             velocidadH = velocidadH - 0.5f;
             Destroy(other.gameObject);
             break;
             case "Pozo(Clone)":
+            choque += 1;
             GameObject MalPo = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,Quaternion.identity);
             Destroy(MalPo,0.4f); 
             velocidadH = velocidadH - 0.4f;
@@ -62,6 +72,11 @@ public class PlayerController : MonoBehaviour
             case "Meta":
             //Ganó
             break;
+        }
+        if (other.gameObject.name == "Meta")
+        {
+            //Gano
+            Debug.Log("gano");
         }
     }
 
