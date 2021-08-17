@@ -71,13 +71,10 @@ public class PlayerController : MonoBehaviour
             break;
             case "Meta":
             //Ganó
+            Debug.Log("gano");
             break;
         }
-        if (other.gameObject.name == "Meta")
-        {
-            //Gano
-            Debug.Log("gano");
-        }
+       
     }
 
 
