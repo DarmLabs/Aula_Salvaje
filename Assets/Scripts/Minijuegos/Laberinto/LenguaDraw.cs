@@ -54,4 +54,9 @@ public class LenguaDraw : MonoBehaviour
         edgeCollider.points = fingerPositions.ToArray();
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Colisiono");
+    }
+
 }
