@@ -49,11 +49,13 @@ public class PlayerMovement : MonoBehaviour
         {
             objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         if (countMal >= 15 || countBasura >= 15)
         {
             objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
