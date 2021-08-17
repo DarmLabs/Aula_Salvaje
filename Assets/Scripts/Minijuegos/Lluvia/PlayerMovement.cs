@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject[] AnimalesCarnivoros;// Sprites de animales según su alimentación
     public GameObject[] AnimalesHerbivoros;//   
     public GameObject[] AnimalesOmnivoros;//
-    Vector3 positionRef = new Vector3(13f, -6.4f, 5.7f); //Posición de referencia en pantalla   
+    Vector3 positionRef = new Vector3(13f, -5.4f, 5.7f); //Posición de referencia en pantalla   
     public GameObject[] visualFeedbacks;
     public int countBasura = 0; //Contadores para items atrapados
     public int countBien = 0; //
