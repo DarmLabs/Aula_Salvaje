@@ -31,8 +31,11 @@ public class DragDrop : MonoBehaviour
     
     void OnMouseDown()
     {
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        dragging = true;
+        if(Time.timeScale != 0)
+        {
+            distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+            dragging = true;
+        }
     }
  
     void OnMouseUp()

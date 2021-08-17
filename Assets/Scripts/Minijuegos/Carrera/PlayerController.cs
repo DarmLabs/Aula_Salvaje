@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private int choque = 0;
 
-    
+    public GameObject objManager;
     void Start() 
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,9 +32,18 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(0,0,-(velocidadH/2)); 
         if(choque == 4)
         {
-            //Perdio
-            Debug.Log("perdio");
+            objManager.GetComponent<MiniGame_Manager>().Lose_miniGame();
         }    
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+           Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space) && Time.timeScale !=0)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
     
     void OnCollisionEnter2D(Collision2D other) 
@@ -70,8 +79,7 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             break;
             case "Meta":
-            //Ganó
-            Debug.Log("gano");
+            objManager.GetComponent<MiniGame_Manager>().Win_miniGame();
             break;
         }
        
