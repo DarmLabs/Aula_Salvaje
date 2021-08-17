@@ -43,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Movimiento()
     {
-        float h = Input.GetAxis("Mouse X");        
+        //float h = Input.GetAxis("Mouse X");  
+        float h =Input.GetAxis("Horizontal");     
         rb.velocity = new Vector2(h*velocidad,0f);
         if (countBien>=25)
         {

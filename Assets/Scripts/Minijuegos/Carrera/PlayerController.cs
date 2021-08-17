@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
     void Movimiento()
     {
        
-        float h = Input.GetAxis("Mouse Y");        
+        //float h = Input.GetAxis("Mouse Y");     
+        float h =Input.GetAxis("Vertical");     
         rb.velocity = new Vector2(velocidadH,h*velocidadV);
         transform.Rotate(0,0,-(velocidadH/2)); 
         if(choque == 4)
