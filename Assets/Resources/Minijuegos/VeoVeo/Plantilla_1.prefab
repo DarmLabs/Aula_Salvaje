@@ -783,7 +783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VEO UN ANIMAL HERVIBORO
+  m_Text: "VEO VEO UN ANIMAL HERV\xCDBORO"
 --- !u!1 &4179890898545953716
 GameObject:
   m_ObjectHideFlags: 0

@@ -9102,7 +9102,7 @@ GameObject:
   - component: {fileID: 1076427309}
   - component: {fileID: 1076427311}
   m_Layer: 5
-  m_Name: "\xD1andu"
+  m_Name: "\xD1and\xFA"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17064,7 +17064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TATU CARRERA
+  m_Text: "TAT\xDA CARRERA"
 --- !u!222 &2039731495
 CanvasRenderer:
   m_ObjectHideFlags: 0

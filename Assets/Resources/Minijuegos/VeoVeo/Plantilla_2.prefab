@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 91}
-  m_SizeDelta: {x: 366.465, y: 33.459}
+  m_SizeDelta: {x: 391.7198, y: 35.7648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4913224050190578465
 CanvasRenderer:
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VEO UN ANIMAL QUE PUEDE VOLAR
+  m_Text: VEO VEO UN ANIMAL QUE PUEDE VOLAR
 --- !u!1 &4913224050301059700
 GameObject:
   m_ObjectHideFlags: 0
