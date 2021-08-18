@@ -38,8 +38,7 @@ public class LenguaDraw : MonoBehaviour
                 else
                 {
                     UpdateLine(tempFingerPos); 
-                }
-               
+                }              
 
             }
         }
