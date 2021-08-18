@@ -13,6 +13,7 @@ public class SpawnObs : MonoBehaviour
     
     void Start () 
     {       
+           //se crean obstaculos aleatorios en las posiciones preestablecidas
            for (int i = 0; i < 23; i++)
            {
                 indexRandom = Random.Range(0,indexObstaculos);        

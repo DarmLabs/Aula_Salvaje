@@ -8,12 +8,14 @@ public class CameraFollow : MonoBehaviour
    
     void Start()
     {
+        //identifica la posición del personaje
         playerTransform=GameObject.FindGameObjectWithTag("Player").transform;
     }
 
    
     void Update()
     {
+        //la camara adquiere la posicion del personaje en el eje x
         Vector3 temp =transform.position;
         temp.x=playerTransform.position.x;
         transform.position=temp;

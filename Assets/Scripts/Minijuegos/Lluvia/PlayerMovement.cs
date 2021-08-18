@@ -18,11 +18,13 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     private float velocidad = 15f;
     public GameObject objManager;
+    
     void Start()
     {        
         Cursor.lockState = CursorLockMode.Locked;
         
         rb = GetComponent<Rigidbody2D>();
+        //aleatoriamente se instancia una carta de animal, para el cual deberemos seleccionar el alimento correcto
         Dieta = Dietas[Random.Range(0,3)];
         switch (Dieta)
         {
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Movimiento()
     {
-        //float h = Input.GetAxis("Mouse X");  
+        //se mueve el personaje con las flechas de direccion, izquierda y derecha  
         float h =Input.GetAxis("Horizontal");     
         rb.velocity = new Vector2(h*velocidad,0f);
         if (countBien>=25)
@@ -62,13 +64,8 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) 
     {
         
-        /*if (other.gameObject.tag == Dieta)
-        {            
-            countBien += 1;
-            Destroy(other.gameObject);
-            GameObject Bien = Instantiate(visualFeedbacks[0],other.gameObject.transform.position,transform.rotation);
-            Destroy(Bien,0.4f);    
-        }*/
+       //se comprueba que los items recogidos sean del tipo correcto, en caso de no serlo se le hace saber al jugador mediante feedback visual
+       //
         
         if(Dieta == "Omnivoro")
         {
@@ -123,23 +120,7 @@ public class PlayerMovement : MonoBehaviour
         }   
 
         
-        /*switch (Dieta)
-        {
-        case "Carnivoro":
-            if (other.gameObject.tag == "Herbivoro")
-            Destroy(other.gameObject);
-            GameObject MalH = Instantiate(visualFeedbacks[2],other.gameObject.transform.position,transform.rotation);
-            Destroy(MalH,0.4f);  
-            countMal+=1;  
-            break;
-        case "Herbivoro":
-            if (other.gameObject.tag == "Carnivoro")
-            Destroy(other.gameObject);
-            GameObject MalC = Instantiate(visualFeedbacks[2],other.gameObject.transform.position,transform.rotation);
-            Destroy(MalC,0.4f);
-            countMal+=1;         
-            break;               
-        }*/
+        
         
        
     }

@@ -15,11 +15,13 @@ public class DragDrop : MonoBehaviour
     void Start()
     {        
         objManager = GameObject.Find("Canvas Overlay");
+        //se inician los contadores para evitar errores
         countCorrect=0;
         countIncorrect=0;
     }
     void Update()
     {
+        //toca las cartas en base a un raycast
         if (dragging)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -33,6 +35,7 @@ public class DragDrop : MonoBehaviour
     
     void OnMouseDown()
     {
+        //al hacer clic se arrastra la carta
         if(Time.timeScale != 0)
         {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
@@ -47,6 +50,7 @@ public class DragDrop : MonoBehaviour
    
     void OnCollisionStay(Collision other) 
     {               
+        //cuando se suelta la carta se comprueba si fue arrastrado a la posicion correcta, se suman los contadores correspondientes
         if (dragging == false)
         {
             if (other.gameObject.tag == "Alimentacion" && other.gameObject.name != this.gameObject.tag)
@@ -65,6 +69,7 @@ public class DragDrop : MonoBehaviour
             }
         } 
     }  
+    //se comprueba que las 5 cartas dadas hayan sido utilizadas
     void condicionVictoria()
     {
         totalCount = countCorrect+countIncorrect;

@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     void Movimiento()
     {
        
-        //float h = Input.GetAxis("Mouse Y");     
+        //movimiento en base a las flechas de direccion, izquierda y derecha    
         float h =Input.GetAxis("Vertical");     
         rb.velocity = new Vector2(velocidadH,h*velocidadV);
         transform.Rotate(0,0,-(velocidadH/2)); 
@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) 
     {         
         Debug.Log(other.gameObject.name);
+        //identifica el objecto con el cual colisiona el tatu carreta, en base al resultado su velocidad se reduce y se le resta una vida en caso de ser un obstaculo grande
         switch (other.gameObject.name)
         {
             case "Cactus(Clone)":

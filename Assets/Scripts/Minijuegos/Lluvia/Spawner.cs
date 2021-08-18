@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     
     void Start () 
     {
+        //se instancia la comida que cae, con una diferencia de tiempo, lo hace aleatoriamente
         InvokeRepeating("invocarComida", 0.3f, timeSpawn);
         
     }

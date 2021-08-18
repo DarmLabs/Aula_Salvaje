@@ -18,6 +18,7 @@ public class Cards : MonoBehaviour
     void Start()
     {      
         objManager = GameObject.Find("Canvas Overlay");
+        //se inicializan las banderas
         facedUp=false;
         coroutineAllowed=true;
         locked=false;
@@ -28,6 +29,7 @@ public class Cards : MonoBehaviour
 
     void  OnMouseDown() 
     {
+        //si el movimiento no esta bloqueado se voltea la carta
         if (!locked && coroutineAllowed)
         {
             StartCoroutine(RotateCard());
@@ -36,6 +38,7 @@ public class Cards : MonoBehaviour
 
     public IEnumerator RotateCard()
     {
+        
         if(Time.timeScale != 0)
         {
             coroutineAllowed=false;
@@ -68,6 +71,8 @@ public class Cards : MonoBehaviour
         }
     }
 
+    //al dar vuelta un par de cartas se comprueba si tienen el mismo nombre, lo que quiere decir que son pares
+    //caso contrario se vuelven a voltear
     void CheckResults()
     {
         firstInPair=sequence.Dequeue();
@@ -94,6 +99,7 @@ public class Cards : MonoBehaviour
         }
     }
 
+    //vuelve a voltear la carta
     public IEnumerator RotateBack()
     {
         coroutineAllowed =false;

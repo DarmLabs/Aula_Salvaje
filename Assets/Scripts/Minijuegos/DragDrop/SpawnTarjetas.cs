@@ -14,6 +14,7 @@ public class SpawnTarjetas : MonoBehaviour
     
     void Start () 
     {       
+           //se crea una de las cartas cargadas  a las posiciones establecidas con anterioridad, de manera aleatoria
            for (int i = 0; i < 6; i++)
            {
                 indexRandom = Random.Range(0,indexTarjetas);        
