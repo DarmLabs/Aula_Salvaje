@@ -1383,7 +1383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: ENCUENTRA EL PAR DE CARTAS DEL MISMO ANIMAL O PROVINCIA!
+  m_Text: ENCUENTRA EL PAR DE CARTAS DEL MISMO ANIMAL!
 --- !u!222 &569076268
 CanvasRenderer:
   m_ObjectHideFlags: 0
