@@ -5,8 +5,7 @@ using UnityEngine;
 public class LenguaDraw : MonoBehaviour
 {
     public GameObject linePrefab;
-    public GameObject currentLine;
-    //public Transform posicionInicial;
+    public GameObject currentLine;  
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
@@ -31,7 +30,17 @@ public class LenguaDraw : MonoBehaviour
             Vector2 tempFingerPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (Vector2.Distance(tempFingerPos,fingerPositions[fingerPositions.Count-1])>.1f)
             {
-                UpdateLine(tempFingerPos);
+                if (ReglasLengua.regresar == true)
+                {
+                    Debug.Log("VUELVE A 0");
+                   
+                }
+                else
+                {
+                    UpdateLine(tempFingerPos); 
+                }
+               
+
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -51,7 +60,7 @@ public class LenguaDraw : MonoBehaviour
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         lineRenderer.SetPosition(0,inicioLine.transform.position);
-      //  lineRenderer.SetPosition(0,fingerPositions[0]);
+        //lineRenderer.SetPosition(0,fingerPositions[0]);
         lineRenderer.SetPosition(1,fingerPositions[1]);
         edgeCollider.points = fingerPositions.ToArray();
         }

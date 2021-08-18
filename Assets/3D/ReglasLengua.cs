@@ -6,6 +6,9 @@ public class ReglasLengua : MonoBehaviour
 {
     // Start is called before the first frame update
     private int contadorHormigas;
+    public static bool regresar = false;
+    public GameObject[] feedback;
+    public GameObject referencia;
     void Start()
     {
         
@@ -23,9 +26,18 @@ public class ReglasLengua : MonoBehaviour
        Debug.Log("Colisiono con:   "+other.gameObject.name+"  "+other.gameObject.tag);
        if (other.gameObject.tag =="Alimentacion")
        {
-           Destroy(other.gameObject);
-           contadorHormigas+=1;
-           Debug.Log("Hormigas comidas:   "+contadorHormigas);
+            GameObject Bien = Instantiate(feedback[0],referencia.transform.position,Quaternion.identity);
+            Destroy(Bien,0.4f);
+            Destroy(other.gameObject);
+            contadorHormigas+=1;
+            regresar = true;
+            Debug.Log("Hormigas comidas:   "+contadorHormigas);
+       }
+       else
+       {
+            GameObject Mal = Instantiate(feedback[1],referencia.transform.position,Quaternion.identity);
+            Destroy(Mal,0.4f);
+            regresar = true;
        }
     }
 
