@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {        
-        Cursor.lockState = CursorLockMode.Locked;
         
         rb = GetComponent<Rigidbody2D>();
         //aleatoriamente se instancia una carta de animal, para el cual deberemos seleccionar el alimento correcto
