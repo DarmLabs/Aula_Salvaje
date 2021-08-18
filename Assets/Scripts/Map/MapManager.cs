@@ -10,17 +10,12 @@ public class MapManager : MonoBehaviour
     public bool Zoom = false;
     GameObject selectedObject;
     public GameObject textReader;
-
-    void Start()
-    {
-        
-    }
     void Update()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray, out hit))
         {
-            if(Input.GetMouseButtonDown(0) && !Zoom)
+            if(Input.GetMouseButtonDown(0) && !Zoom)//usando raycast selecciono una provincia si no hay otra seleccionada
             {
                 if(hit.transform.gameObject.tag == "Provincia")
                 {
@@ -36,7 +31,7 @@ public class MapManager : MonoBehaviour
             }
         } 
     }
-    IEnumerator zoomOutEnds(int secs)
+    IEnumerator zoomOutEnds(int secs)//esta funcion activa 
     {
         yield return new WaitForSeconds(secs);
         Zoom = false;
@@ -45,14 +40,14 @@ public class MapManager : MonoBehaviour
         GetComponent<UI_Manager>().InfoPanelOff();
     }
     
-    IEnumerator zoomInEnds(int secs)
+    IEnumerator zoomInEnds(int secs)//activo funciones en el ui manager
     {
         yield return new WaitForSeconds(secs); 
         GetComponent<UI_Manager>().SelectionOn(); 
         GetComponent<UI_Manager>().exitMapButtonOn();   
     }
     
-    public void zoomOut()
+    public void zoomOut()//esta funcion se activa presionando X para salir de la seleccion de una provincia
     {
         if (Zoom)
         {

@@ -11,14 +11,14 @@ public class Universal_AudioController : MonoBehaviour
     public bool stateS = true;
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);//permite que el script siga activo en todas las escenas
     }
-    void Start()
+    void Start()//busco los contenedores de sonidos y musica
     {
         MusicContainer = transform.Find("MusicTracks").gameObject;
         SFXContainer = transform.Find("SFX").gameObject;
     }
-    public void SSwitcher()
+    public void SSwitcher()//esta funcion genera una animacion de encendido y apagado en los botones de sonido
     {
         if(stateS)
         {
@@ -31,7 +31,7 @@ public class Universal_AudioController : MonoBehaviour
             SFXContainer.SetActive(true);
         }
     }
-    public void MSwitcher()
+    public void MSwitcher()//esta funcion genera una animacion de encendido y apagado en los botones de musica
     {
         if(stateM)
         {

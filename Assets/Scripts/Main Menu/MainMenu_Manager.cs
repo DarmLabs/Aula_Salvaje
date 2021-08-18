@@ -9,14 +9,14 @@ public class MainMenu_Manager : MonoBehaviour
     public GameObject Panel;
     void Start()
     {
-        AudioManager.transform.GetChild(1).transform.GetChild(0).GetComponent<AudioSource>().Play();
+        AudioManager.transform.GetChild(1).transform.GetChild(0).GetComponent<AudioSource>().Play();//inicia la cancion del menu
     }
-    public void PressPlay()
+    public void PressPlay()//funcion al presionar play, carga la escena del mapa y caratulas
     {
         SceneManager.LoadSceneAsync("In-Game");
         ButtonSound();
     }
-    public void PressCredits()
+    public void PressCredits()//activa y desactiva los creditos
     {
         if(Panel.activeSelf == false)
         {
@@ -28,7 +28,7 @@ public class MainMenu_Manager : MonoBehaviour
         }
         ButtonSound();
     }
-    public void ButtonSound()
+    public void ButtonSound()//funcion de sonido
     {
         AudioManager.transform.GetChild(0).transform.GetChild(0).GetComponent<AudioSource>().Play();
     }

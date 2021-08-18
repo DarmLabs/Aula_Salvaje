@@ -15,11 +15,11 @@ D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/projectPaka
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54117
+65369
 Successfully changed project path to: D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/projectPaka
 D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/projectPaka
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.68 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 51.12 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -36,103 +36,109 @@ Initialize mono
 Mono path[0] = 'D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Escritorio/Cosas de Juegos Variados/Unity/Proyectos de Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002658 seconds.
+Registered in 0.002593 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 53.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.358 seconds
+- Completed reload, in  2.163 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001786 seconds.
+Registered in 0.002189 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 52.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 60.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.072 seconds
+- Completed reload, in  1.118 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.7 MB.
-System memory in use after: 116.9 MB.
+System memory in use before: 116.8 MB.
+System memory in use after: 117.0 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2918.
-Total: 2.825100 ms (FindLiveObjects: 0.239200 ms CreateObjectMapping: 0.120600 ms MarkObjects: 2.345900 ms  DeleteObjects: 0.118200 ms)
+Total: 2.743000 ms (FindLiveObjects: 0.276300 ms CreateObjectMapping: 0.151100 ms MarkObjects: 2.190500 ms  DeleteObjects: 0.123800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Main Menu.unity
-  artifactKey: Guid(e9af7a4024f730b4ba1c9990c62c8f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Menu.unity using Guid(e9af7a4024f730b4ba1c9990c62c8f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290a03587b9affd9c228bb28407fd7cf') in 0.016904 seconds
-  Import took 0.020650 seconds .
+  path: Assets/2D/Sprites/UI/Creditos.png
+  artifactKey: Guid(c64cae4ebd2373b46a5f7253862b6106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos.png using Guid(c64cae4ebd2373b46a5f7253862b6106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72815c50877fd8fb3f8d022a7b09eb7') in 0.097605 seconds
+  Import took 0.107256 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1468.560224 seconds.
-  path: Assets/Sounds/Music/Goat___Wayne_Jones___Musica_para_Ninos___Sin_Copyright_720p.ogg
-  artifactKey: Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Goat___Wayne_Jones___Musica_para_Ninos___Sin_Copyright_720p.ogg using Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7eac881fe79fa753f4748cfb0590a3') in 0.148675 seconds
-  Import took 0.153429 seconds .
+  Time since last request: 2.929484 seconds.
+  path: Assets/2D/Sprites/UI/Creditos.png
+  artifactKey: Guid(c64cae4ebd2373b46a5f7253862b6106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos.png using Guid(c64cae4ebd2373b46a5f7253862b6106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fb1a89b4f725cb7e635f704a69e229') in 0.009372 seconds
+  Import took 0.014126 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Sounds/Music/Sand_Castle___Quincas_Moreira___Musica_para_Ninos___Sin_Copyright_720p1.ogg
-  artifactKey: Guid(611ab112c88606b48bc159fb48e2023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Sand_Castle___Quincas_Moreira___Musica_para_Ninos___Sin_Copyright_720p1.ogg using Guid(611ab112c88606b48bc159fb48e2023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164766f7a24e4d0d5ae108ad9be9a935') in 0.009850 seconds
-  Import took 0.014106 seconds .
+  Time since last request: 229.765020 seconds.
+  path: Assets/2D/Sprites/UI/Creditos1.png
+  artifactKey: Guid(4ac161ec319fe3740b8010d197d0bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos1.png using Guid(4ac161ec319fe3740b8010d197d0bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c294778e0f0395abd5c1ab72c1e8649') in 0.009587 seconds
+  Import took 0.024935 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Sounds/Music/Twirly_Tops___he_Green_Orbs___Musica_para_Ninos___Sin_Copyright_720p.ogg
-  artifactKey: Guid(0cf5ce99c5a234741a0789a0138f2cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Twirly_Tops___he_Green_Orbs___Musica_para_Ninos___Sin_Copyright_720p.ogg using Guid(0cf5ce99c5a234741a0789a0138f2cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1994492c38c9bf2aeefefc0b6479321') in 0.009168 seconds
-  Import took 0.013773 seconds .
+  Time since last request: 0.000355 seconds.
+  path: Assets/2D/Sprites/UI/Creditos2.png
+  artifactKey: Guid(a30d90a66d5f0ac4da882b48ae622daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos2.png using Guid(a30d90a66d5f0ac4da882b48ae622daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ecb1f306c42d055cf54691948ae964') in 0.021041 seconds
+  Import took 0.025424 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 132.135579 seconds.
-  path: Assets/Sounds/Music/Sand Castle Quincas Moreira.ogg
-  artifactKey: Guid(611ab112c88606b48bc159fb48e2023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Sand Castle Quincas Moreira.ogg using Guid(611ab112c88606b48bc159fb48e2023f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33634116b47ef0e1c1662e28270b6687') in 0.009713 seconds
-  Import took 0.015035 seconds .
+  Time since last request: 6.600475 seconds.
+  path: Assets/2D/Sprites/UI/Creditos1.png
+  artifactKey: Guid(4ac161ec319fe3740b8010d197d0bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos1.png using Guid(4ac161ec319fe3740b8010d197d0bd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6d4269b599219e2b53baef02c901b0') in 0.053563 seconds
+  Import took 0.058318 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 208.577382 seconds.
-  path: Assets/Sounds/Music/Goat Wayne Jones.ogg
-  artifactKey: Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Goat Wayne Jones.ogg using Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0b2b3c1409c8804c8fdb136eaf9b01') in 0.009599 seconds
-  Import took 0.014842 seconds .
+  Time since last request: 0.000385 seconds.
+  path: Assets/2D/Sprites/UI/Creditos2.png
+  artifactKey: Guid(a30d90a66d5f0ac4da882b48ae622daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D/Sprites/UI/Creditos2.png using Guid(a30d90a66d5f0ac4da882b48ae622daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b33c0f4a0c83e7aea2ce2658b0d6fd7') in 0.015945 seconds
+  Import took 0.020103 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.001563 seconds.
-  path: Assets/Sounds/Music/Goat Wayne Jones.ogg
-  artifactKey: Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Goat Wayne Jones.ogg using Guid(60bb95dda115a1f489bda2436da1b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0b2b3c1409c8804c8fdb136eaf9b01') in 0.009998 seconds
-  Import took 0.015043 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.160 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2365 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.8 MB.
+System memory in use after: 113.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 99.198719 seconds.
-  path: Assets/Sounds/Music/Twirly Tops he Green Orbs.ogg
-  artifactKey: Guid(0cf5ce99c5a234741a0789a0138f2cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Twirly Tops he Green Orbs.ogg using Guid(0cf5ce99c5a234741a0789a0138f2cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6850632f82899e5b14c74220cc3f455') in 0.034450 seconds
-  Import took 0.039202 seconds .
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2932.
+Total: 2.307900 ms (FindLiveObjects: 0.241800 ms CreateObjectMapping: 0.116500 ms MarkObjects: 1.894600 ms  DeleteObjects: 0.054000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -35,9 +35,9 @@ public class UI_Manager : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 1;
-        AudioManager = GameObject.Find("AudioController");
-        if(AudioManager != null)
+        Time.timeScale = 1;//el tiempo se setea a 1 ya que si viene de un minijuego el tiempo es 0
+        AudioManager = GameObject.Find("AudioController");//se busca el controlador de audio
+        if(AudioManager != null)//detiene otras canciones
         {
             AudioManager.transform.GetChild(1).transform.GetChild(1).GetComponent<AudioSource>().Stop();
             AudioManager.transform.GetChild(1).transform.GetChild(2).GetComponent<AudioSource>().Stop();
@@ -48,26 +48,26 @@ public class UI_Manager : MonoBehaviour
     }
     void Update()
     {
-        Name.transform.position = Input.mousePosition;
+        Name.transform.position = Input.mousePosition;//lleva el texto que muestra el nombre de la provincia a la posicion del mouse
     }
     public void TurnOnText()
     {
-        Name.GetComponent<Text>().enabled = true;
+        Name.GetComponent<Text>().enabled = true; //activa el texto del nombre de las provincias 
     }
     public void TurnOffText()
     {
-        Name.GetComponent<Text>().enabled = false;
+        Name.GetComponent<Text>().enabled = false;// aqui lo desactiva
     }
-    public void SelectionOn()
+    public void SelectionOn() //al selecciona una provincia se toma el nombre de la provincia y se muestran sus respectivos animales
     {
         selectedProvincia = Animales.transform.Find(GetComponent<MapManager>().currentProvincia).gameObject;
         selectedProvincia.SetActive(true);
     }
-    public void SelectionOff()
+    public void SelectionOff() //aqui se desactivan
     {
         selectedProvincia.SetActive(false);
     }
-    public void SlideToRight()
+    public void SlideToRight() //esta funcion se ejecuta al deslizar la camara hacia la derecha y entrar en la pantalla "Juega"
     {
         GetComponent<Animator>().Play("Deslizar Derecha");
         LeftButton.GetComponent<Button>().enabled = false;
@@ -75,36 +75,36 @@ public class UI_Manager : MonoBehaviour
         ScreenOnLeft = false;
         ButtonSound();
     }
-    public void SlideToLeft()
+    public void SlideToLeft() //esta funcion se ejecuta al deslizar la camara hacia la izquierda y entrar en la pantalla "Aprende"
     {
         GetComponent<Animator>().Play("Deslizar Izquierda");
         RightButton.GetComponent<Button>().enabled = false;
         ButtonSound();
     }
-    public void OnRight()
+    public void OnRight() //Esta funcion se reproduce al terminar la transicion de izquierda a derecha
     {
         RightButton.GetComponent<Button>().enabled = true;
     }
-    public void OnLeft()
+    public void OnLeft()//Esta funcion se reproduce al terminar la transicion de derecha a izquierda
     {
         Bloqueador_Inicio.SetActive(false);
         ScreenOnLeft = true;
         LeftButton.GetComponent<Button>().enabled = true;
         GetComponent<MapManager>().enabled = true;
     }
-    public void InfoPanelOn()
+    public void InfoPanelOn()//activa el panel de informacion de animales (detalle)
     {
         CuadernoOverlay.SetActive(true);
         CuadernoWorldSpace.SetActive(false);
         textureButtons.SetActive(false);
     }
-    public void InfoPanelOff()
+    public void InfoPanelOff()//desactiva el panel de informacion de animales (detalle)
     {
         CuadernoOverlay.SetActive(false);
         CuadernoWorldSpace.SetActive(true);
         textureButtons.SetActive(true);
     }
-    public void PressFlap()
+    public void PressFlap()//al presionar una solapa se activa la caratula propia de la solapa y esta despararece
     {
         if(previousButton != null)
         {
@@ -118,20 +118,20 @@ public class UI_Manager : MonoBehaviour
         previousButton = selectedButton;
         FlapSound();
     }
-    public void ChangeScene()
+    public void ChangeScene()//se utiliza para cambiar a la escena del minijuego de la caratula activada
     {
         SceneManager.LoadSceneAsync(selectedButton);   
     }
-    public void exitMapButtonOn()
+    public void exitMapButtonOn()//activa el boton que hace zoom out al mapa 
     {
         exitMapButton.SetActive(true);
     }
-    public void exitMapButtonOff()
+    public void exitMapButtonOff()//desactiva el boton que hace zoom out al mapa 
     {
         exitMapButton.SetActive(false);
         ButtonSound();
     }
-    public void switchTexture()
+    public void switchTexture()//esta funcion cambia la textura del mapa segun los botones geograficos
     {
         refRelieves.SetActive(false);
         refBiomas.SetActive(false);
@@ -169,14 +169,14 @@ public class UI_Manager : MonoBehaviour
         }
         ButtonSound();
     }
-    public void ButtonSound()
+    public void ButtonSound()//funcion del sonido de boton
     {
         if(AudioManager != null)
         {
             AudioManager.transform.GetChild(0).transform.GetChild(0).GetComponent<AudioSource>().Play();
         }      
     }
-    public void FlapSound()
+    public void FlapSound()//funcion del sonido de la solapa
     {
         if(AudioManager != null)
         {
