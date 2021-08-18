@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/DragDrop.unity
     guid: 25fa56b194e07b943a2b341a0c3218d8
   - enabled: 1
-    path: Assets/Scenes/Minijuegos/Laberinto.unity
-    guid: b9ccc37c89cc92e4bb59f29ddb7ff5eb
-  - enabled: 1
     path: Assets/Scenes/Minijuegos/Carrera.unity
     guid: c332c75fcc25c0f4dba4b2b8041fd43a
   m_configObjects: {}

@@ -2769,7 +2769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioManager: {fileID: 926314834}
-  Panel: {fileID: 0}
+  Panel: {fileID: 734942372}
 --- !u!114 &2086036317
 MonoBehaviour:
   m_ObjectHideFlags: 0
