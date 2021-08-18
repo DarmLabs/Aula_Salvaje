@@ -200,3 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deceb30eb370bf646838e418528b30aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feedback:
+  - {fileID: 3502508038698071210, guid: 2e33f9f66e18a594eaf91e46e672a5b6, type: 3}
+  - {fileID: 2395876689901718301, guid: 4517fce707a56444ab4d184a631694c1, type: 3}
+  referencia: {fileID: 6421865588448176636, guid: 58c9a520a795c6e4188157dd265bcd1c, type: 3}

@@ -15,6 +15,8 @@ public class DragDrop : MonoBehaviour
     void Start()
     {        
         objManager = GameObject.Find("Canvas Overlay");
+        countCorrect=0;
+        countIncorrect=0;
     }
     void Update()
     {
