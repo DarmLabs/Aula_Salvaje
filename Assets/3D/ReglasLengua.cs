@@ -34,8 +34,8 @@ public class ReglasLengua : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("Hormigas comidas:   "+contadorHormigas);
        }
-       else
-       {
+        if  (other.gameObject.tag =="Pared")     
+        {
             GameObject Mal = Instantiate(feedback[1],referencia.transform.position,Quaternion.identity);
             Destroy(Mal,0.4f);
             regresar = true;
