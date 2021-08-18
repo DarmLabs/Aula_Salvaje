@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 1004515868074236227}
   - component: {fileID: 6112055335756691340}
   m_Layer: 5
-  m_Name: Incorrecto
+  m_Name: Correcto
   m_TagString: card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,4 +820,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VEO VEO UN ANIMAL QUE USA SU COLA PARA TREPAR ARBOLES
+  m_Text: "VEO VEO UN ANIMAL QUE USA SU COLA PARA TREPAR \xC1RBOLES"
