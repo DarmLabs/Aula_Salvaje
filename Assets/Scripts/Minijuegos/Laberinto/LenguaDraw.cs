@@ -14,6 +14,7 @@ public class LenguaDraw : MonoBehaviour
 
     public GameObject inicioLine;
     private bool singleLine=true;
+    private bool unavez = false;
     void Start()
     {
         
@@ -32,8 +33,26 @@ public class LenguaDraw : MonoBehaviour
             {
                 if (ReglasLengua.regresar == true)
                 {
-                    Debug.Log("VUELVE A 0");
-                   
+                    Debug.Log("VUELVE A 0");                   
+                    singleLine=true;
+                    if (!unavez)
+                    {
+                        currentLine=Instantiate(linePrefab,Vector3.zero,Quaternion.identity);
+        lineRenderer= currentLine.GetComponent<LineRenderer>();
+        edgeCollider = currentLine.GetComponent<EdgeCollider2D>();
+        fingerPositions.Clear();
+        fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        lineRenderer.SetPosition(0,inicioLine.transform.position);
+        //lineRenderer.SetPosition(0,fingerPositions[0]);
+        lineRenderer.SetPosition(1,fingerPositions[1]);
+        edgeCollider.points = fingerPositions.ToArray();
+                        unavez = true;
+                    }           
+                    
+
+                    
+                    
                 }
                 else
                 {

@@ -31,6 +31,7 @@ public class ReglasLengua : MonoBehaviour
             Destroy(other.gameObject);
             contadorHormigas+=1;
             regresar = true;
+            Destroy(this.gameObject);
             Debug.Log("Hormigas comidas:   "+contadorHormigas);
        }
        else
@@ -38,6 +39,7 @@ public class ReglasLengua : MonoBehaviour
             GameObject Mal = Instantiate(feedback[1],referencia.transform.position,Quaternion.identity);
             Destroy(Mal,0.4f);
             regresar = true;
+            Destroy(this.gameObject);
        }
     }
 
